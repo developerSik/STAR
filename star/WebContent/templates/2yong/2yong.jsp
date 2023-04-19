@@ -32,7 +32,7 @@
   </div>
 </div>
 
-  <body class="vsc-initialized">
+  <body class="vsc-initialized" style="margin:0px;">
     <div id="__next">
       <div>
         <div class="wrapper">
