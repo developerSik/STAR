@@ -6,11 +6,12 @@ body { padding: 0px; margin: 0px;
     line-height: 1;
     -webkit-text-size-adjust: none;
  }
+ 
             .jb-box { width: 100%; height: 500px; overflow: hidden; position: relative; margin-top: 160px; }
             video { 
                 position: absolute;
                 width: 100% ;
-                height: 1725px;
+                height: 1729px;
                                  }
             .jb-text { position: absolute; top: 50%; width: 100%; }
             .jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }
@@ -31,7 +32,7 @@ body { padding: 0px; margin: 0px;
 .appdown {
     display: block;
     overflow: hidden;
-    width: 962px;
+    width: 973px;
     height: 320px;
     margin: 100px auto 78px auto;
     background: url(//image.goodchoice.kr/images/web_v3/bg_appdown.png) center center no-repeat;
@@ -88,7 +89,7 @@ footer .link {
     padding: 130px 31px 0 31px;
 }
 .recommend {
-    width: 1024px;
+    width: 1033px;
     margin-top: 50px;
     margin-bottom:170px;
     overflow: hidden;
@@ -302,94 +303,6 @@ a{
     text-decoration: none;
 }
 
-#imglogo{
-  width:43px;
-  height:43px;
-}
-
-header {
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   height: 72px;
-   transition: 0.4s;
-   background-color: red;
-}
-
-header section {
-   position: relative;
-   width: 1024px;
-   height: 64px;
-   background: none;
-   margin: 0 auto;
-}
-
-header section h1 a {
-   display: block;
-   text-indent: -9999px;
-}
-
-.gnb_pc {
-   display: inline-block;
-   position: absolute;
-   top: 27px;
-   right: 31px;
-}
-
-.gnb_pc {
-   width: auto;
-   text-align: right;
-}
-
-.gnb_pc li a {
-   display: inline-block;
-   font-size: 18px;
-   color: rgba(255, 255, 255, 0.8);
-   letter-spacing: 0;
-}
-
-.gnb_pc li {
-   display: inline-block;
-   position: relative;
-   min-width: 53px;
-   min-height: 35px;
-   margin-left: 30px;
-   vertical-align: top;
-}
-
-header section h1 {
-   position: absolute;
-   top: 26px;
-   left: 31px;
-   width: 96px;
-   height: 20px;
-   margin: 0;
-   background: url(//image.goodchoice.kr/images/web_v3/h1_logo_pc_w.png) 0
-      0 no-repeat;
-   background-size: 96px auto;
-}
-
-header section .btn_srch {
-   position: absolute;
-   border: none;
-   text-indent: -9999px;
-   top: 22px;
-   right: 396px;
-   z-index: 10;
-   width: 30px;
-   height: 30px;
-   background: url(//image.goodchoice.kr/images/web_v3/ico_srch_2.png) 50%
-      50% no-repeat;
-   background-size: 24px auto;
-}
-
-.gnb_pc {
-   display: inline-block;
-   position: absolute;
-   top: 27px;
-   right: 31px;
-}
 
 .sub_top_wrap {
        height: 211px;
@@ -415,18 +328,116 @@ header section .btn_srch {
     color: #fff;
 }
 
+
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 72px;
+  transition: 0.3s;
+   background-color: red;
+}
+
+header section {
+   position: relative;
+   width: 1024px;
+   height: 64px;
+   background: none;
+   margin: 0 auto;
+}
+
+header section h1 a {
+   display: block;
+   color :#EBEBEB
+
+}
+
+
+header section h1 {
+   position: absolute;
+   top: 26px;
+   left: 31px;
+   width: 96px;
+   height: 20px;
+   margin: 0;
+   
+/*   background: url(//image.goodchoice.kr/images/web_v3/h1_logo_pc_w.png) 0
+    0 no-repeat; */
+
+   background-size: 96px auto;
+}
+
+header section .btn_srch {
+   position: absolute;
+   border: none;
+   text-indent: -9999px;
+   top: 22px;
+   right: 396px;
+   z-index: 10;
+   width: 30px;
+   height: 30px;
+   background: url(//image.goodchoice.kr/images/web_v3/ico_srch_2.png) 50%
+      50% no-repeat;
+   background-size: 24px auto;
+}
+
+.gnb_pc {
+   display: inline-block;
+   position: absolute;
+   top: 15px;
+   right: 31px;
+}
+
+.gnb_pc {
+   width: auto;
+   text-align: right;
+}
+
+.gnb_pc li a {
+   display: inline-block;
+   font-size: 18px;
+   color: #fff;
+   letter-spacing: 0;
+}
+
+
+.gnb_pc li {
+   display: inline-block;
+   position: relative;
+   min-width: 53px;
+   min-height: 35px;
+   margin-left: 30px;
+   vertical-align: top;
+}
+
 #menu {
   display: flex;
   justify-content: space-between;
-  background-color: red;
-  transition: all 300ms ease;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  background-color: rgb(104, 145, 226);
+  /*transition: all 300ms ease;*/
+  
 }
 
 #menu.active {
-  background: transparent;
-  color: white;
+    position: fixed;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 210;
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
+  
+} 
+
+.bannertext.textactive{
+
+   color: rgb(104, 145, 226);
+   
+}
+
+#bannertext.textactive2{
+
+color: rgb(104, 145, 226);
+
 }

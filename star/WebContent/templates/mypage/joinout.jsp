@@ -52,7 +52,7 @@
 						<li class="radio-list__item">
 							<div class="select-item-area">
 								<div style="display: inline-block;vertical-align: text-top;width: 20px;height: 20px;overflow: hidden;margin-right: 12px;">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+									<svg id="click" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
 										<defs>
 											<clipPath id="__lottie_element_2">
 												<rect width="60" height="60" x="0" y="0"></rect>
@@ -236,4 +236,13 @@
 	</div>
 	
 </body>
+<script>
+
+
+var svg = document.querySelector('#click');
+svg.onclick = function(){
+	svg.style.color = 'red';
+}
+
+</script>
 </html>
