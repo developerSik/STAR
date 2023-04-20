@@ -8,31 +8,39 @@
 <title>Insert title here</title>
 </head>
 
-  <header class="recommend_header" id="menu">
-    <section>
-        <h1>
-            <a class="" href="../templates/mainpage.jsp"></a>
-        </h1>
-        <button type="button" class="btn_srch srch_open">검색</button>
-        <ul class="gnb_pc">
-            <li><a href="">내주변</a></li>
-            <li><a href="">예약내역</a></li>
-            <li><a href="">더보기</a></li>
-            <li><a href="">로그인</a></li>
-        </ul>
-    </section>
-</header>
+<body class="vsc-initialized" style="margin:0px" >
+    
 
-<div class="sub_top_wrap">
-  <div class="sub_top bg_kong_2">
-    <h2
-  >
-    STAR 후기
-  </h2>
+    <header id="menu">
+        <section>
+            <div>
+            <img style="width:72px;
+            height:72px;margin-left: -47px;" src="../../static/image/2.png">
+            </div>
+
+
+            <h1>                 
+                <a href="../../templates/mainpage.jsp" id="bannertext">STAR</a>
+            </h1>
+
+
+            <ul class="gnb_pc" >
+                <li><a class="bannertext" href="">내주변</a></li>
+                <li><a class="bannertext" href="">예약내역</a></li>
+                <li><a class="bannertext" href="">더보기</a></li>
+                <li><a class="bannertext" href="">로그인</a></li>
+            </ul>
+        </section>
+    </header>
+  
+  <div class="sub_top_wrap">
+    <div class="sub_top bg_kong_2">
+      <h2
+    >
+      STAR 후기
+    </h2>
+    </div>
   </div>
-</div>
-
-  <body class="vsc-initialized" style="margin:0px;">
     <div id="__next">
       <div>
         <div class="wrapper">
@@ -189,17 +197,30 @@
             </footer>
 
   </body>
-<script>
+  <script>
 
-    const menu = document.querySelector('#menu');
-    const menuHeight = menu.getBoundingClientRect().height;
+    
+const menu = document.querySelector('#menu');
+const bannertext = document.querySelector('#bannertext');
+const banner = document.querySelectorAll('.bannertext');
+const menuHeight = menu.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
+
   if (window.scrollY > menuHeight) {
     menu.classList.add('active');
+    bannertext.classList.add('textactive2');
+    for(let i=0; i<banner.length; i++){
+        banner[i].classList.add('textactive');
+    }
   } else {
     menu.classList.remove('active');
+    bannertext.classList.remove('textactive2');
+    for(let i=0; i<banner.length; i++){
+        banner[i].classList.remove('textactive');
+    }
   }
+
 });
 
 </script>
