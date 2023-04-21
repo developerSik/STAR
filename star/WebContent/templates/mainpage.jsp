@@ -5,22 +5,28 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../static/css/mainpage.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 <title>STAR</title>
 </head>
 
 <body class="pc vsc-initialized" >
     <div class="wrap main_wrap show" >
         
+        <body class="pc vsc-initialized" >
+    <div class="wrap main_wrap show" >
+        
         <header id="menu">
             <section>
                 <div>
-                <img style="width:72px;
-                height:72px;margin-left: -47px;" src="../static/image/2.png">
+                <img style="width: 150px;
+    height: 150px;
+    margin-left: -90px;
+    margin-top: -33px;" src="../static/image/3.png">
                 </div>
 
 
                 <h1>                 
-                    <a href="../templates/mainpage.jsp" id="bannertext">STAR</a>
+                    <a href="" id="bannertext">Save The Animal Relationship</a>
                 </h1>
 
 
@@ -43,7 +49,7 @@
      <strong>너 브라우저 이거 실행 못시킴</strong>
         </video>
         <div class="jb-text">
-          <p>Safe The Animal Relationship</p>
+          <p>Save The Animal Relationship</p>
         </div>
       </div>
 

@@ -12,26 +12,25 @@
     
 
     <header id="menu">
-        <section>
-            <div>
-            <img style="width:72px;
-            height:72px;margin-left: -47px;" src="../../static/image/2.png">
-            </div>
-
-
-            <h1>                 
-                <a href="../../templates/mainpage.jsp" id="bannertext">STAR</a>
-            </h1>
-
-
-            <ul class="gnb_pc" >
-                <li><a class="bannertext" href="">내주변</a></li>
-                <li><a class="bannertext" href="">예약내역</a></li>
-                <li><a class="bannertext" href="">더보기</a></li>
-                <li><a class="bannertext" href="">로그인</a></li>
-            </ul>
-        </section>
-    </header>
+            <section>
+                <div>
+                <img style="width: 150px;
+   					 height: 150px;
+    				margin-left: -90px;
+    				margin-top: -33px;" 
+    				src="../../static/image/3.png">
+                </div>
+                <h1>                 
+                    <a href="" id="bannertext">Save The Animal Relationship</a>
+                </h1>
+                <ul class="gnb_pc" >
+                    <li><a class="bannertext" href="">내주변</a></li>
+                    <li><a class="bannertext" href="">예약내역</a></li>
+                    <li><a class="bannertext" href="">더보기</a></li>
+                    <li><a class="bannertext" href="">로그인</a></li>
+                </ul>
+            </section>
+        </header>
   
   <div class="sub_top_wrap">
     <div class="sub_top bg_kong_2">
