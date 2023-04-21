@@ -5,34 +5,32 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../../static/css/sitter/found.css">
+<link rel="stylesheet" href="../../static/js/summernote/banner.js">
 <title>돌봄이 찾기</title>
 </head>
 <body class="pc">
     <div class="wrap show">
-        <header class="recommend_header">
-            <section>
-                <h1>
-                    <a class="" href="">돌봄이 찾기</a>
-                </h1>
-                <button type="button" class="btn_srch srch_open ">검색</button>
-                <ul class="gnb_pc">
-                    <li><a href="">내주변</a></li>
-                    <li><a href="">예약내역</a></li>
-                    <li><a href="">더보기</a></li>
-                    <li><a href="">로그인</a></li>
-                </ul>
-            </section>
-        </header>
+	<header id="menu">
+        <section>
+            <div>
+            <img style="width:72px; height:72px;margin-left: -47px;" src="../../static/image/2.png">
+            </div>
+            <h1>                 
+                <a href="../../templates/mainpage.jsp" id="bannertext">STAR</a>
+            </h1>
+            <ul class="gnb_pc" >
+                <li><a class="bannertext" href="">내주변</a></li>
+                <li><a class="bannertext" href="">예약내역</a></li>
+                <li><a class="bannertext" href="">더보기</a></li>
+                <li><a class="bannertext" href="">로그인</a></li>
+            </ul>
+        </section>
+   	 </header>
         <form id="product_filter_form" method="get">
             <div class="listpage">
                 <div class="sub_top_wrap">
                     <div class="sub_top bg_kong_1">
                         <h2>돌봄이 찾기</h2>
-                        <div class="area">s
-                            <div class="btn_area align_vertical">
-                                <span>서울</span>역삼
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div id="content" class="sub_wrap">
@@ -41,25 +39,19 @@
                             <h3>날짜</h3>
                             <div class="btn_date">
                                 <span class="date_view">
-                                    <b>4.14 ~4.15</b>
-                                    <em>1박</em>
+                                    <b>날짜 보기</b>
+                                    <em></em>
                                 </span>
                             </div>
                         </section>
                         <h3>상세조건</h3>
                         <div class="btn_wrap">
-                            <button type="button">초기화</button>
+                            <button type="button submit">초기화</button>
                             <button type="submit">적용</button>
                         </div>
+                       
                         <section>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="reserve_0" name="reserve[]" class="inp_chk"value="2">
-                                    <label for="reserve_0" class="label_chk">예약 가능</label>
-                                </li>
-                            </ul>
-                        </section>
-                        <section><strong>돌봄이 유형</strong>
+                        <strong>돌봄이 유형</strong>
                             <ul>
                                 <li>
                                     <input type="checkbox" id="grade_0" class="inp_chk" >
@@ -76,10 +68,14 @@
                         </section>
                         <section><strong>서울<button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
-                                <li><input type="checkbox" id="tmino_0" class="inp_chk" value="56"><label
-                                        for="tmino_0" class="label_chk">강남구</label></li>
-                                <li><input type="checkbox" id="tmino_1" class="inp_chk"
-                                        value="148"><label for="tmino_1" class="label_chk">송파구</label></li>
+                                <li>
+                                	<input type="checkbox" id="tmino_0" class="inp_chk" value="56">
+                                	<label for="tmino_0" class="label_chk">강남구</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="tmino_1" class="inp_chk"value="148">
+                                	<label for="tmino_1" class="label_chk">송파구</label>
+                                </li>
                                 <li><input type="checkbox" id="tmino_2" class="inp_chk" value="57"><label
                                         for="tmino_2" class="label_chk">서초구</label></li>
                                 <li><input type="checkbox" id="tmino_3" class="inp_chk" value="58"><label
@@ -125,30 +121,18 @@
                     </div>
                     <div class="list_wrap">
                         <div class="top_sort">
-                            <div class="pc">
+                                <button type="button" class="btn_map"></button>
+                             <div class="pc">
                                 <div class="btn_wrap width_4">
-                                    <button type="button" class="on">
-                                        <span>추천 순</span>
-                                    </button>
-                                    <button type="button" class="">
-                                        <span>거리 순</span>
-                                    </button>
-                                    <button type="button" class="">
-                                        <span>낮은 가격 순</span>
-                                    </button>
-                                    <button type="button" class="">
-                                        <span>높은 가격 순</span>
+                                    <button type="" class="">
+                                        <span>공지사항</span>
                                     </button>
                                 </div>
-                                <button type="button" class="btn_map">지도</button>
-                            </div>
+                            </div> 
                         </div>
                         <div id="poduct_list_area">
-                            <div class="title">
-                                <h3>역삼</h3>
-                            </div>
                             <li class="list_4 adcno6">
-                                <a href="">
+                                <a href="http://localhost:8090/day01/templates/sitter/view.jsp">
                                     <p class="pic">
                                         <img class="lazy" src="https://image-notepet.akamaized.net/seimage/20170802%2F46f8a4d185319d0b9bed3053090ae7c0.jpg" style="display: inline;">
                                     </p>
@@ -162,14 +146,14 @@
                                         </div>
                                         <div class="price">
                                             <p> 
-                                                <b>예약하기</b>
+                                                <b>상세보기</b>
                                              </p>
                                         </div>
                                     </div>
                                 </a>
                             </li>
                             <li class="list_4 adcno6">
-                                <a href="">
+                                <a href="http://localhost:8090/day01/templates/sitter/view.jsp">
                                     <p class="pic">
                                         <img class="lazy" src="https://image-notepet.akamaized.net/seimage/20170802%2F46f8a4d185319d0b9bed3053090ae7c0.jpg" style="display: inline;">
                                     </p>
@@ -183,14 +167,14 @@
                                         </div>
                                         <div class="price">
                                             <p> 
-                                                <b>예약하기</b>
+                                                <b>상세보기</b>
                                              </p>
                                         </div>
                                     </div>
                                 </a>
                             </li>
                             <li class="list_4 adcno6">
-                                <a href="">
+                                <a href="http://localhost:8090/day01/templates/sitter/view.jsp">
                                     <p class="pic">
                                         <img class="lazy" src="https://image-notepet.akamaized.net/seimage/20170802%2F46f8a4d185319d0b9bed3053090ae7c0.jpg" style="display: inline;">
                                     </p>
@@ -204,14 +188,14 @@
                                         </div>
                                         <div class="price">
                                             <p> 
-                                                <b>예약하기</b>
+                                                <b>상세보기</b>
                                              </p>
                                         </div>
                                     </div>
                                 </a>
                             </li>
                             <li class="list_4 adcno6">
-                                <a href="">
+                                <a href="http://localhost:8090/day01/templates/sitter/view.jsp">
                                     <p class="pic">
                                         <img class="lazy" src="https://image-notepet.akamaized.net/seimage/20170802%2F46f8a4d185319d0b9bed3053090ae7c0.jpg" style="display: inline;">
                                     </p>
@@ -225,14 +209,14 @@
                                         </div>
                                         <div class="price">
                                             <p> 
-                                                <b>예약하기</b>
+                                                <b>상세보기</b>
                                              </p>
                                         </div>
                                     </div>
                                 </a>
                             </li>
                             <li class="list_4 adcno6">
-                                <a href="">
+                                <a href="http://localhost:8090/day01/templates/sitter/view.jsp">
                                     <p class="pic">
                                         <img class="lazy" src="https://image-notepet.akamaized.net/seimage/20170802%2F46f8a4d185319d0b9bed3053090ae7c0.jpg" style="display: inline;">
                                     </p>
@@ -277,4 +261,29 @@
         </div>
     </footer>
 </body>
+<script>
+const menu = document.querySelector('#menu');
+const bannertext = document.querySelector('#bannertext');
+const banner = document.querySelectorAll('.bannertext');
+const menuHeight = menu.getBoundingClientRect().height;
+
+document.addEventListener('scroll', () => {
+
+  if (window.scrollY > menuHeight) {
+    menu.classList.add('active');
+    bannertext.classList.add('textactive2');
+    for(let i=0; i<banner.length; i++){
+        banner[i].classList.add('textactive');
+    }
+  } else {
+    menu.classList.remove('active');
+    bannertext.classList.remove('textactive2');
+    for(let i=0; i<banner.length; i++){
+        banner[i].classList.remove('textactive');
+    }
+  }
+
+});
+
+</script>
 </html>

@@ -9,31 +9,28 @@
 </head>
 <body class="pc">
     <div class="wrap show">
-        <header class="recommend_header">
-            <section>
-                <h1>
-                    <a class="" href="">퀘스트 전달하기</a>
-                </h1>
-                <button type="button" class="btn_srch srch_open ">검색</button>
-                <ul class="gnb_pc">
-                    <li><a href="">내주변</a></li>
-                    <li><a href="">예약내역</a></li>
-                    <li><a href="">더보기</a></li>
-                    <li><a href="">로그인</a></li>
-                </ul>
-            </section>
-        </header>
+	<header id="menu">
+        <section>
+            <div>
+            <img style="width:72px; height:72px;margin-left: -47px;" src="../../static/image/2.png">
+            </div>
+            <h1>                 
+                <a href="../../templates/mainpage.jsp" id="bannertext">STAR</a>
+            </h1>
+            <ul class="gnb_pc" >
+                <li><a class="bannertext" href="">내주변</a></li>
+                <li><a class="bannertext" href="">예약내역</a></li>
+                <li><a class="bannertext" href="">더보기</a></li>
+                <li><a class="bannertext" href="">로그인</a></li>
+            </ul>
+        </section>
+   	 </header>
 
         <form id="product_filter_form" method="get">
             <div class="listpage">
                 <div class="sub_top_wrap">
                     <div class="sub_top bg_kong_1">
                         <h2>퀘스트 전달하기</h2>
-                        <div class="area">
-                            <div class="btn_area align_vertical">
-                                <span>돌봄이</span>강형욱
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div id="content" class="sub_wrap">
@@ -87,20 +84,20 @@
                             <strong>픽업 돌봄<button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li>
-                                    <input type="checkbox" id="tmino_0" class="inp_chk" value="56">
-                                    <label for="tmino_0" class="label_chk">병원 방문</label>
+                                    <input type="checkbox" id="tmino_31" class="inp_chk" value="56">
+                                    <label for="tmino_31" class="label_chk">병원 방문</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="tmino_1" class="inp_chk" value="148">
-                                    <label for="tmino_1" class="label_chk">미용샵 방문</label>
+                                    <input type="checkbox" id="tmino_32" class="inp_chk" value="148">
+                                    <label for="tmino_32" class="label_chk">미용샵 방문</label>
                                     </li>
                                 <li>
-                                    <input type="checkbox" id="tmino_2" class="inp_chk" value="57">
-                                    <label for="tmino_2" class="label_chk">유치원 방문</label>
+                                    <input type="checkbox" id="tmino_33" class="inp_chk" value="57">
+                                    <label for="tmino_33" class="label_chk">유치원 방문</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="tmino_3" class="inp_chk" value="58">
-                                    <label for="tmino_3" class="label_chk">애견호텔 방문</label>
+                                    <input type="checkbox" id="tmino_34" class="inp_chk" value="58">
+                                    <label for="tmino_34" class="label_chk">애견호텔 방문</label>
                                 </li>
                             </ul>
                         </section>
@@ -108,25 +105,25 @@
                             <strong>음악듣기<button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li>
-                                    <input type="checkbox" id="tmino_0" class="inp_chk" value="56">
-                                    <label for="tmino_0" class="label_chk">자연소리</label>
+                                    <input type="checkbox" id="tmino_37" class="inp_chk" value="56">
+                                    <label for="tmino_37" class="label_chk">자연소리</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="tmino_1" class="inp_chk" value="148">
-                                    <label for="tmino_1" class="label_chk">바람소리</label>
+                                    <input type="checkbox" id="tmino_46" class="inp_chk" value="148">
+                                    <label for="tmino_46" class="label_chk">바람소리</label>
                                     </li>
                                 <li>
-                                    <input type="checkbox" id="tmino_2" class="inp_chk" value="57">
-                                    <label for="tmino_2" class="label_chk">물소리</label>
+                                    <input type="checkbox" id="tmino_47" class="inp_chk" value="57">
+                                    <label for="tmino_47" class="label_chk">물소리</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="tmino_3" class="inp_chk" value="58">
-                                    <label for="tmino_3" class="label_chk">풀소리</label>
+                                    <input type="checkbox" id="tmino_48" class="inp_chk" value="58">
+                                    <label for="tmino_48" class="label_chk">풀소리</label>
                                 </li>
                             </ul>
                         </section>
                         <div class="btn_wrap">
-                            <button type="button">초기화</button>
+                            <button type="button submit">초기화</button>
                             <button type="submit">전달하기</button>
                         </div>
                     </div>
@@ -138,16 +135,10 @@
                                 <div class="btn_wrap width_4">
                                     <table>
                                         <tbody>
-                                            <tr>
-                                                <td colspan="3">
-                                                    <h2>제목</h2>
-                                                    <input type="text" style="width: 574px; height: 35px;"  class="input_st" id="inquiry_ctitle">
-                                                </td>
-                                            </tr>
                                             <tr id="inquirytrText">
                                                 <td colspan="3">
                                                     <h2>내용</h2>
-                                                    <textarea class="input_st" id="inquiry_receptionform" style="width: 574px; height: 535px;"></textarea>
+                                                    <textarea class="input_st" id="inquiry_receptionform" style="width: 574px; height: 620px;"></textarea>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -179,4 +170,29 @@
     </footer>
 
 </body>
+<script>
+const menu = document.querySelector('#menu');
+const bannertext = document.querySelector('#bannertext');
+const banner = document.querySelectorAll('.bannertext');
+const menuHeight = menu.getBoundingClientRect().height;
+
+document.addEventListener('scroll', () => {
+
+  if (window.scrollY > menuHeight) {
+    menu.classList.add('active');
+    bannertext.classList.add('textactive2');
+    for(let i=0; i<banner.length; i++){
+        banner[i].classList.add('textactive');
+    }
+  } else {
+    menu.classList.remove('active');
+    bannertext.classList.remove('textactive2');
+    for(let i=0; i<banner.length; i++){
+        banner[i].classList.remove('textactive');
+    }
+  }
+
+});
+
+</script>
 </html>
