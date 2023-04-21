@@ -3,14 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>서비스 문의</title>
-<link href="../../static/css/inquiry/OTOwrite.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../../static/css/inquiry/myPostingwrite.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
+<meta charset="UTF-8">
+<title>내가 작성한 글 수정</title>
 </head>
 <body>
 	<div class="wrap show">
-	    <!-- Header -->
 		<header id="menu">
             <section>
                 <div>
@@ -32,35 +32,45 @@
                 </ul>
             </section>
         </header>
-</div>
-
-<!-- Sub Top -->
-<div class="sub_top_wrap">
-	<div class="sub_top bg_kong_3">
-		<h2>더보기</h2>
-	</div>
-</div>
-<!-- //Sub Top -->
-
-<!-- Content  -->
-<div id="content" class="sub_wrap more_wrap">
-
-	<!-- Nav -->
-	<nav>
-    <ul>
-        <li><a href="../inquiry/FAQ-TOP7.jsp">자주 묻는 질문</a></li>
-        <li><a href="../inquiry/OTOwrite.jsp" class="active">서비스 문의</a></li>
-    </ul>
-	</nav>
+		<div class="sub_top_wrap">
+			<div class="sub_top bg_kong_2">
+				<h2>내가 작성한 글</h2>
+			</div>
+		</div>
+		<div id="content" class="sub_wrap more_wrap">
+			<nav>
+				<ul>
+					<li>
+						<a href="info.jsp">내 정보 관리</a>
+					</li>
+					<li>
+						<a href="../mypage/petsitterform.jsp">돌보미 신청</a>
+					</li>
+					<li>
+						<a href="../mypage/carelist.jsp">돌봄 내역</a>
+					</li>
+					<li>
+						<a href="../mypage/reservationlist.jsp">이용 내역</a>
+					</li>
+					<li>
+						<a href="../mypage/review.jsp">이용후기</a>
+					</li>
+					<li>
+						<a href="../mypage/report.jsp">신고목록</a>
+					</li>
+					<li>
+						<a class="mypageatag" href="../inquiry/myPostinglist.jsp">내가 작성한 글</a>
+					</li>
+				</ul>
+			</nav>
 	<div class="align_rt">
 		<!-- Inquiry -->
 		<div class="inquiry">
 
 			<!-- Tab -->
 			<div class="tab">
-				<span class="tab_btn"><a href="../inquiry/OTOlist.jsp">서비스 문의 내역</a></span>
-				<span class="tab_btn"><a href="../inquiry/OTOwrite.jsp">새 문의 작성</a></span>
-				<span class="tab_btn active"><a href="../inquiry/OTOmodi.jsp">문의글 수정</a></span>
+				<span class="tab_btn"><a href="../inquiry/myPostinglist.jsp">작성한 글 내역</a></span>
+				<span class="tab_btn active"><a href="../inquiry/myPostingwrite.jsp">작성한 글 수정</a></span>
 			</div>
 
 			<!-- 리스트 -->
@@ -124,40 +134,18 @@
 							</div>
 						</section>
 						<section class="btn_wrap ">
-							<button class="btn_blue_fill" type="button" onclick="$.inqSubmit();">작성 완료</button>
+						<input class="btn_blue_fill" type="button" value="작성완료" onclick="location.href='../inquiry/myPostinglist.jsp'">
 						</section>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<!-- //Content  -->
+		</div>
+		<!-- //Notice -->
 
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="align">
-            <ul class="link">
-                <li><a href="http://www.naver.com/" target="_blank">회사소개</a><span>|</span></li>
-                <li><a href="http://www.naver.com/" data-default="term">이용약관</a><span>|</span></li>
-                <li><a href="http://www.naver.com/" data-default="privacy">개인정보처리방침</a><span>|</span></li>
-                <li><a href="http://www.naver.com/" target="_blank">돌봄예약신청</a><span>|</span></li>
-                <li><a href="http://www.naver.com/" target="_blank">돌봄이용후기</a></li>
-            </ul>
-            <p><b>고객센터 1588-5890</b><span>오전 9시 - 오후 6시</span></p>
-            <address>
-                <span>(주) STAR컴퍼니</span>
-								주소 : 서울 강남구 테헤란로 146 | 대표이사 : STAR | 사업자등록번호: 010-12-34567 | 전자우편주소 : star@star.kr<br>
-                통신판매번호 : 2023-서울강남-01001 | 관광사업자 등록번호: 제2023-01호 | 전화번호 : 1588-5890 | 호스팅서비스제공자의 상호 표시: (주) STAR컴퍼니<br>
-                <span class="order">(주) STAR컴퍼니는 서비스예약중개자로서 서비스제공의 당사자가 아니며, 서비스의 예약, 이용과 관련한 의무와 책임은 각 이용자에게 있습니다.</span><br>
-                Copyright STAR COMPANY Corp. All rights reserved.
-            </address>
-        </div>
-    </footer>
-    
-	<!-- 상단으로 -->
-	<button class="btn_go_top" onclick="moveTop();" style="display: none;">상단으로</button>
+	</div>
+		</div>
+	</div>
 </body>
 </html>
