@@ -19,11 +19,13 @@
 					</strong>
 				</div>
 				<div class="inp_type_1 ico_email form-errors">
-					<input type="email" name="uid" placeholder="이메일 주소" required class="required" value data-msg-required="이메일 주소를 입력해 주세요.">
+					<input id="email" type="email" name="uid" placeholder="이메일 주소" required class="required" value data-msg-required="이메일 주소를 입력해 주세요.">
+					<p id="pemail"></p>
 					<button type="button" class="reset_val">초기화</button>
 				</div>
 				<div class="inp_type_1 ico_pw form-errors">
-					<input type="password" name="upw" placeholder="비밀번호" required class="required" data-msg-required="비밀번호를 입력해 주세요.">
+					<input id="password" type="password" name="upw" placeholder="비밀번호" required class="required" data-msg-required="비밀번호를 입력해 주세요.">
+					<p id="ppassword"></p>
 					<button type="button" class="reset_val">초기화</button>
 				</div>
 				<button class="btn_link gra_left_right_red" type="submit">
@@ -45,4 +47,6 @@
 		</section>
 	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../../static/js/login.js"></script>
 </html>

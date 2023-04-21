@@ -7,24 +7,30 @@
 <link rel="stylesheet" type="text/css"
 	href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>돌봄내역</title>
 </head>
 <body>
 	<div class="wrap show">
-		<header class="recommend_header">
-			<section>
-				<h1>
-					<a class="" href=""></a>
-				</h1>
-				<button type="button" class="btn_srch srch_open">검색</button>
-				<ul class="gnb_pc">
-					<li><a href="">내주변</a></li>
-					<li><a href="">예약내역</a></li>
-					<li><a href="">더보기</a></li>
-					<li><a href="">로그인</a></li>
-				</ul>
-			</section>
-		</header>
+		<header id="menu">
+            <section>
+                <div>
+                <img style="width: 150px;
+   					 height: 150px;
+    				margin-left: -90px;
+    				margin-top: -33px;" 
+    				src="../../static/image/3.png">
+                </div>
+                <h1>                 
+                    <a href="" id="bannertext">Save The Animal Relationship</a>
+                </h1>
+                <ul class="gnb_pc" >
+                    <li><a class="bannertext" href="">내주변</a></li>
+                    <li><a class="bannertext" href="">예약내역</a></li>
+                    <li><a class="bannertext" href="">더보기</a></li>
+                    <li><a class="bannertext" href="">로그인</a></li>
+                </ul>
+            </section>
+        </header>
 		<div class="sub_top_wrap">
 			<div class="sub_top bg_kong_2">
 				<h2>이용내역</h2>
@@ -34,16 +40,16 @@
 			<nav>
 				<ul>
 					<li>
-						<a  href="info.jsp">내 정보관리</a>
+						<a  href="info.jsp">내 정보 관리</a>
 					</li>
 					<li>
 						<a href="petsitterform.jsp">돌보미 신청</a>
 					</li>
 					<li>
-						<a  href="carelist.jsp">돌봄내역</a>
+						<a href="carelist.jsp">돌봄 내역</a>
 					</li>
 					<li>
-						<a class="mypageatag" href="reservationlist.jsp">이용내역</a>
+						<a class="mypageatag" href="reservationlist.jsp">이용 내역</a>
 					</li>
 					<li>
 						<a href="review.jsp">이용후기</a>
@@ -131,4 +137,5 @@
 		</div>
 	</div>
 </body>
+<script src="../../static/js/header.js"></script>
 </html>
