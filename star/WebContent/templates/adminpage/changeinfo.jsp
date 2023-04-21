@@ -25,23 +25,292 @@
 				<li><label for="btns"><input class="btns selected"
 						type="button" value="회원정보 조회/수정"
 						onClick="location.href='changeinfo.jsp'"></label></li>
-				<li><label for="btns"><input class="btns" type="button"
-						value="홈페이지 요소 수정" onClick="location.href='updatepage.jsp'"></label></li>
 			</ul>
 		</nav>
 		<section class="mainadminpage">
-			<div class="big-box">
-			<p>회원정보 조회/수정</p>
-				<form class="search-box">
+			<form class="big-box">
+				<p>회원정보 수정/삭제</p>	
+				<div class="search-box">
 					<select>
+						<option value="title">제목</option>
+						<option value="content">내용</option>
 						<option value="name">이름</option>
 						<option value="id">ID</option>
 					</select> <input type="text" name="search" id="search" /> <input
 						type="image" class="search"
 						src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" />
-				</form>
-				<div class="content"></div>
-			</div>
+					<input type="button" class="delete" name="delete" value="삭제하기" />
+				</div>
+				<div class="content">
+				<table >
+				<tr>
+					<th><input type="checkbox" name="delete-report" class="all"/></th>
+					<th>회원 번호</th>
+					<th>이름</th>
+					<th>ID</th>
+					<th>주소</th>
+					<th>나이</th>
+					<th>성별</th>
+					<th>전화번호</th>
+					<th>이메일</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delete-report" class="all"/></td>
+					<td>1</td>
+					<td>김이나</td>
+					<td>kimyee</td>
+					<td>서울시 관악구 봉천</td>
+					<td>24</td>
+					<td>남</td>
+					<td>010-1111-2222</td>
+					<td>kimyee@snaver.com</td>
+				
+				</tr>
+				
+				</table>
+				<p class="pages"> < 1 2 3 4 > </p>
+				</div>
+			</form>
 		</section>
 
 	</main>

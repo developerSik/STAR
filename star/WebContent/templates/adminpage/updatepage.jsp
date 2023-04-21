@@ -12,7 +12,7 @@
 	<main>
 		<nav>
 			<div class="btns">
-				<a id="gomain" href="메인 페이지">사이트 바로가기</a>
+				<input type="image" src="../../static/image/logo.png">
 			</div>
 			<p>사이트 관리</p>
 			<ul class="menubar">
@@ -25,8 +25,6 @@
 						value="신고 목록" onClick="location.href='reportlist.jsp'"></label></li>
 				<li><label for="btns"><input class="btns" type="button"
 						value="회원정보 조회/수정" onClick="location.href='changeinfo.jsp'"></label></li>
-			<li><label for="btns"><input class="btns selected" type="button"
-						value="홈페이지 요소 수정" onClick="location.href='updatepage.jsp'"></label></li>
 			</ul>
 		</nav>
 		<section class="mainadminpage">
