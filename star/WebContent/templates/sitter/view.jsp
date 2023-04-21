@@ -10,30 +10,28 @@
 
 <body class="pc">
     <div class="wrap show">
-        <header class="recommend_header">
-            <section>
-                <h1>
-                    <a class="" href="">돌봄이 상세보기</a>
-                </h1>
-                <button type="button" class="btn_srch srch_open ">검색</button>
-                <ul class="gnb_pc">
-                    <li><a href="">내주변</a></li>
-                    <li><a href="">예약내역</a></li>
-                    <li><a href="">더보기</a></li>
-                    <li><a href="">로그인</a></li>
-                </ul>
-            </section>
-        </header>
+	<header id="menu">
+        <section>
+            <div>
+			<div>
+                <img style="width: 150px; height: 150px; margin-left: -90px; margin-top: -33px;" src="../../static/image/2.png">
+                </div>
+            <h1>                 
+                <a href="../../templates/mainpage.jsp" id="bannertext">Save The Animal Relationship</a>
+            </h1>
+            <ul class="gnb_pc" >
+                <li><a class="bannertext" href="">내주변</a></li>
+                <li><a class="bannertext" href="">예약내역</a></li>
+                <li><a class="bannertext" href="">더보기</a></li>
+                <li><a class="bannertext" href="">로그인</a></li>
+            </ul>
+        </section>
+   	 </header>
         <form id="product_filter_form" method="get">
             <div class="listpage">
                 <div class="sub_top_wrap">
                     <div class="sub_top bg_kong_1">
                         <h2>돌봄이 상세보기</h2>
-                        <div class="area">
-                            <div class="btn_area align_vertical">
-                                <span>돌봄이</span>강형욱
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -72,9 +70,8 @@
                     </div>
                 </div>
             </div>
+            
             <div style="margin:39px;padding-bottom:32px;border-bottom:1px solid #EBEBEB">
-      
-
                 <div style="display:flex;flex-direction:row;margin-top:27px">
                     <img src="https://wayopet.com/static/images/trainer_detail/img_career_1.png" style="width:32px;height:32px">
                     <div style="margin-top:4px;margin-left:18px">
@@ -201,5 +198,30 @@
         </div>
     </footer>
 </body>
+<script>
+const menu = document.querySelector('#menu');
+const bannertext = document.querySelector('#bannertext');
+const banner = document.querySelectorAll('.bannertext');
+const menuHeight = menu.getBoundingClientRect().height;
+
+document.addEventListener('scroll', () => {
+
+  if (window.scrollY > menuHeight) {
+    menu.classList.add('active');
+    bannertext.classList.add('textactive2');
+    for(let i=0; i<banner.length; i++){
+        banner[i].classList.add('textactive');
+    }
+  } else {
+    menu.classList.remove('active');
+    bannertext.classList.remove('textactive2');
+    for(let i=0; i<banner.length; i++){
+        banner[i].classList.remove('textactive');
+    }
+  }
+
+});
+
+</script>
 
 </html>
