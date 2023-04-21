@@ -31,6 +31,11 @@ div, header, section, h1, button, ul, span, .sub_top_wrap {
     visibility: visible;
 }
 
+a{
+    text-decoration: none;
+}
+
+
 header {
 	position: fixed;
 	top: 0;
@@ -40,12 +45,8 @@ header {
   	transition: 0.3s;
    	background-color: #388e3c;
    	z-index: 9999;
-}
 
-a{
-    text-decoration: none;
 }
-
 
 header section {
 	position: relative;
@@ -70,15 +71,7 @@ header section h1 a {
    	display: block;
    	color :#EBEBEB;
    	font-size : 18px;
-}
 
-.gnb_pc {
-    display: inline-block;
-    position: absolute;
-    top: 15px;
-    right: 31px;
-    width: auto;
-    text-align: right;
 }
 
 .gnb_pc li a {
@@ -113,7 +106,7 @@ header section .btn_srch {
 .gnb_pc {
 	display: inline-block;
 	position: absolute;
-	top: 27px;
+	top: 15px;
 	right: 31px;
 }
 
@@ -184,7 +177,7 @@ ul {
 .gnb_pc {
     display: inline-block;
     position: absolute;
-    top: 13px;
+    top: 15px;
     right: 31px;
     width: auto;
     text-align: right;
@@ -432,27 +425,28 @@ button span {
     font-size: 18px;
     line-height: normal;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.show_list li .list_que:after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 14px;
+    height: 9px;
+    margin-top: -5px;
+    background: #fff url(//image.goodchoice.kr/images/web_v3/ico_arr_3.png) 0 0 no-repeat;
+    background-size: 14px auto;
 }
 
 .show_list li a {
-	color: rgba(0,0,0,0.87);
-    box-sizing: border-box;
+	color: rgba(0,0,0,0.87) !important;
+    box-sizing: border-box !important;
 }
 
-.show_list li .list_que {
-    display: block;
-    position: relative;
-    height: auto;
-    margin-bottom: 0;
-    padding: 38px 24px 35px 0;
-    border-radius: 0;
-    background: #fff;
-    font-size: 18px;
-    line-height: normal;
-    cursor: pointer;
-}
-
-.show_list li .list_que p {
+.show_list li .list_que div {
     padding-bottom: 7px;
     overflow: visible;
     white-space: normal;
@@ -461,12 +455,20 @@ button span {
     word-wrap: break-word;
 }
 
-.show_list p .reply_chk {
+.show_list div .reply_chk {
     display: inline-block;
     position: relative;
     top: 1px;
     border: 1px solid rgba(0,0,0,0.87);
     color: rgba(0,0,0,0.87);
+    height: auto;
+    margin-right: 7px;
+    padding: 0 3px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    vertical-align: top;
 }
 
 .show_list li .list_que span {
@@ -557,12 +559,11 @@ option {
     padding: 0px 2px 1px;
 }
 
-.inquiry .memberId-block {
+.inquiry .phone-block {
     position: relative;
-    margin-bottom: 40px;
 }
 
-.inquiry .title-block {
+.inquiry .email-block {
     margin-top: 45px;
 }
 
@@ -649,9 +650,10 @@ option {
     text-align: center;
 }
 
-.btn_wrap button {
+.btn_wrap input {
     width: 144px;
     height: 48px;
+    cursor: pointer;
 }
 
 .btn_blue_fill {

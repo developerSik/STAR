@@ -4,31 +4,34 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>1:1문의</title>
+<title>서비스 문의</title>
 <link href="../../static/css/inquiry/OTOwrite.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 </head>
 <body>
-<div class="wrap show">
+	<div class="wrap show">
+	    <!-- Header -->
+		<header id="menu">
+            <section>
+                <div>
+                <img style="width: 150px;
+    						height: 150px;
+						    margin-left: -90px;
+						    margin-top: -33px;" src="../../static/image/logo.png">
+                </div>
 
-    <!-- Header -->
-    <header>
-        <section>
-            <h1><a class="" href="/day01/templates/inquiry/OTOwrite.jsp" title="star">STAR</a></h1>
-            <button type="button" class="btn_menu nav_open ">메뉴</button>
-            <button type="button" class="btn_srch srch_open ">검색</button>
-            <ul class="gnb_pc">
-                    <li><a href="">Main Category1</a></li>
-                    <li><a href="">Main Category2</a></li>
-                    <li class="over">
-                    <button type="button"><span>더보기</span></button>
-                    <ul class="list_03" style="display: none; opacity: 1;">
-	                    <li><a href="">문의게시판</a></li>
-	                    <li><a href="">1:1 문의</a></li>
-                    </ul>
-                    </li>
-            </ul>
-        </section>
-    </header>
+                <h1>                 
+                    <a href="" id="bannertext">Save The Animal Relationship</a>
+                </h1>
+				<button type="button" class="btn_srch srch_open">검색</button>
+                <ul class="gnb_pc" >
+                    <li><a class="bannertext" href="">내주변</a></li>
+                    <li><a class="bannertext" href="">예약내역</a></li>
+                    <li><a class="bannertext" href="">더보기</a></li>
+                    <li><a class="bannertext" href="">로그인</a></li>
+                </ul>
+            </section>
+        </header>
 </div>
 
 <!-- Sub Top -->
@@ -46,7 +49,7 @@
 	<nav>
     <ul>
         <li><a href="../inquiry/FAQ-TOP7.jsp">자주 묻는 질문</a></li>
-        <li><a href="../inquiry/OTOwrite.jsp" class="active">1:1 문의</a></li>
+        <li><a href="../inquiry/OTOwrite.jsp" class="active">서비스 문의</a></li>
     </ul>
 	</nav>
 	<div class="align_rt">
@@ -55,8 +58,9 @@
 
 			<!-- Tab -->
 			<div class="tab">
-				<span class="tab_btn"><a href="../inquiry/OTOmodi.jsp">나의 문의 내역</a></span>
+				<span class="tab_btn"><a href="../inquiry/OTOlist.jsp">서비스 문의 내역</a></span>
 				<span class="tab_btn active"><a href="../inquiry/OTOwrite.jsp">새 문의 작성</a></span>
+				<span class="tab_btn"><a href="../inquiry/OTOmodi.jsp">문의글 수정</a></span>
 			</div>
 
 			<!-- 리스트 -->
@@ -97,14 +101,14 @@
 																<option value="99">미정</option>
 														</select>
 	
-							<div class="phone-block">
-								<b>휴대폰 번호</b>
-								<p class="inp_wrap"><input class="js-phone-number" data-type="phoneNumber" type="tel" maxlength="11" name="uphone" value="" placeholder="선택사항입니다."><button type="button" class="reset_val">초기화</button></p>
+							<div class="memberId-block">
+								<b>회원 ID</b>
+								<p class="inp_wrap"><input class="js-phone-number" data-type="phoneNumber" type="tel" maxlength="11" name="uphone" value="" placeholder="자동반영"><button type="button" class="reset_val">초기화</button></p>
 							</div>
 	
-							<div class="email-block">
+							<div class="title-block">
 								<b>제목</b>
-								<p class="inp_wrap"><input data-email-validate="" class="js-email-string" type="email" value="" name="uemail" placeholder="선택사항입니다."><button type="button" class="reset_val">초기화</button></p>
+								<p class="inp_wrap"><input class="js-email-string" type="email" value="" name="uemail" placeholder="선택사항입니다."><button type="button" class="reset_val">초기화</button></p>
 							</div>
 						</section>
 
