@@ -8,21 +8,27 @@
 <title>STAR</title>
 </head>
 
-
-<body class="pc vsc-initialized">
-    <div class="wrap main_wrap show">
+<body class="pc vsc-initialized" >
+    <div class="wrap main_wrap show" >
         
-        <header class="recommend_header" id="menu">
+        <header id="menu">
             <section>
-                <h1>
-                    <a class="" href="../../templates/mainpage.jsp"></a>
+                <div>
+                <img style="width:72px;
+                height:72px;margin-left: -47px;" src="../static/image/2.png">
+                </div>
+
+
+                <h1>                 
+                    <a href="../templates/mainpage.jsp" id="bannertext">STAR</a>
                 </h1>
-                <button type="button" class="btn_srch srch_open">검색</button>
-                <ul class="gnb_pc">
-                    <li><a href="">내주변</a></li>
-                    <li><a href="">예약내역</a></li>
-                    <li><a href="">더보기</a></li>
-                    <li><a href="">로그인</a></li>
+
+
+                <ul class="gnb_pc" >
+                    <li><a class="bannertext" href="">내주변</a></li>
+                    <li><a class="bannertext" href="">예약내역</a></li>
+                    <li><a class="bannertext" href="">더보기</a></li>
+                    <li><a class="bannertext" href="">로그인</a></li>
                 </ul>
             </section>
         </header>
@@ -33,17 +39,8 @@
 
     <div class="jb-box">
         <video muted="" autoplay="" loop="">
-
-
-
-
-          <source id="mainbanner_video" src="../static/image/1234.mp4" type="video/mp4">
-
-
-
-
-
-          <strong>너 브라우저 이거 실행 못시킴</strong>
+      <source id="mainbanner_video" src="../static/image/1234.mp4" type="video/mp4">
+     <strong>너 브라우저 이거 실행 못시킴</strong>
         </video>
         <div class="jb-text">
           <p>Safe The Animal Relationship</p>
@@ -74,7 +71,7 @@
 
         <div style="flex:1;display:flex;align-self:center;flex-direction:row;align-items:center">
             
-            <div style="width:970px">
+            <div style="width:986px">
 
 
         <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
@@ -137,7 +134,11 @@
             </div></div></div>
 
             <div style="width:100%;height:1200px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-top:100px; margin-bottom: 150px;">
-            <div style="display:flex;flex-direction:row">       
+            <div style="display:flex;flex-direction:row ">
+            <img style="width: 50px;
+                height: 50px;
+                margin-top: -15px;
+                margin-right: -10px;" id="imglogo" src="../static/image/2.png">       
             <h2 style="font-weight:700;letter-spacing:0.2px;margin-top:21px;font-size:50px;line-height:70px;color:#555555"><b>STAR</b> 후기</h2></div>
  
             
@@ -201,17 +202,30 @@
         </address>
     </div>
 </footer>
+
 <script>
 
-    const menu = document.querySelector('#menu');
-    const menuHeight = menu.getBoundingClientRect().height;
+const menu = document.querySelector('#menu');
+const bannertext = document.querySelector('#bannertext');
+const banner = document.querySelectorAll('.bannertext');
+const menuHeight = menu.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
+
   if (window.scrollY > menuHeight) {
     menu.classList.add('active');
+    bannertext.classList.add('textactive2');
+    for(let i=0; i<banner.length; i++){
+        banner[i].classList.add('textactive');
+    }
   } else {
     menu.classList.remove('active');
+    bannertext.classList.remove('textactive2');
+    for(let i=0; i<banner.length; i++){
+        banner[i].classList.remove('textactive');
+    }
   }
+
 });
 
 </script>
