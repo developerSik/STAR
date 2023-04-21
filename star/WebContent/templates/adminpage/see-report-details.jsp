@@ -32,13 +32,10 @@
 						value="메인페이지" onClick="location.href='mainadmin.jsp'"></label></li>
 				<li><label for="btns"><input class="btns" type="button"
 						value="문의글 목록" onClick="location.href='answerlist.jsp'"></label></li>
-				<li><label for="btns"><input class="btns" type="button"
+				<li><label for="btns"><input class="btns selected" type="button"
 						value="신고 목록" onClick="location.href='reportlist.jsp'"></label></li>
 				<li><label for="btns"><input class="btns" type="button"
 						value="회원정보 조회/수정" onClick="location.href='changeinfo.jsp'"></label></li>
-				<li><label for="btns"><input class="btns selected"
-						type="button" value="홈페이지 요소 수정"
-						onClick="location.href='updatepage.jsp'"></label></li>
 			</ul>
 		</nav>
 		<section class="mainadminpage">
@@ -53,12 +50,12 @@
 						<td>134</td>
 					</tr>
 					<tr>
-						<td>신고유형</td>
-						<td>펫시터관련</td>
+						<td>신고자 이름</td>
+						<td>김진</td>
 					</tr>
 					<tr>
-						<td>제목</td>
-						<td>펫시터가 이상해요!</td>
+						<td>신고유형</td>
+						<td>펫시터관련</td>
 					</tr>
 					<tr>
 						<td>작성자ID</td>
@@ -83,7 +80,7 @@
 					</tr>
 				</table>
 				<div class="button-box">
-				<input type="submit" name="go-to-answer-list" value="문의목록"/>
+				<input type="button" name="go-to-answer-list" value="신고목록" onClick="location.href='reportlist.jsp'"/>
 				<input type="submit" name="submit-answer" value="답변등록"/>
 				</div>
 				</form>
@@ -92,9 +89,9 @@
 	</main>
 </body>
 <script>
-	$('.summernote').summernote({
+	/* $('.summernote').summernote({
 		height : 150,
 		lang : "ko-KR"
-	});
+	}); */
 </script>
 </html>

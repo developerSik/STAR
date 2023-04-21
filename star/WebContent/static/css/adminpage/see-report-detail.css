@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 .big-box{
-	margin:20px;
-	width: 97%;
+	margin: 50px auto ;
+	width: 50%;
 	height:90%;
 }
 .mainadminpage div p{
@@ -15,14 +15,14 @@
 }
 table {
     width: 100%;
-    border-top: 2px solid #444444;
-    border-bottom: 2px solid #444444;
-    border-collapse: collapse;
+    border-top: 2px solid rgb(192 192 192);
+    border-bottom: 2px solid rgb(192 192 192);
     background-color:white;
+    border-collapse:collapse;
   }
   td {
-    border-bottom: 1px solid #444444;
-    border-left: 1px solid #444444;
+    border-bottom: 1px solid  rgb(192 192 192);
+    border-left: 1px solid  rgb(192 192 192);
     padding: 10px;
     width:50%;
   }
@@ -34,6 +34,7 @@ table {
   }
   td:first-child {
     border-left: none;
+    width:30%;
   }
   .container{
   width:100%;
@@ -52,4 +53,7 @@ table {
 }
 .button-box input:first-child{
 	right:110px;
+}
+.note-editor.note-frame, .note-editor.note-airframe {
+    border:none !important;
 }

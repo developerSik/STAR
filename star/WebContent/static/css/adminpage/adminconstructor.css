@@ -86,18 +86,21 @@
 *{
 	list-style: none;
 	margin:0;
-    padding: 0;
-	text-decoration: none;
-    box-sizing: border-box;
+    padding: 0 ;
+   	text-decoration: none !important;
+    box-sizing: border-box !important ;
 }  
 
 /* 메인영역 */
 html{
 	    font: normal 400 16px 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
-	height: 100%;
+	height: 100% ;
+background-color: rgb(230, 230, 230) !important;
 }
 body{
 height: 100%;
+background-color: rgb(230, 230, 230) !important;
+line-height:1.0 !important;
 }
 body main{
 	display: flex;
@@ -108,6 +111,8 @@ main nav{
 	background-color: rgb(77,77,77);
     color: white;
     min-width:150px;
+    position:fixed;
+    height:100%;
 }
 main nav p{
     margin: 30px 0 3px 3px;
@@ -118,12 +123,12 @@ main nav p{
     padding-left: 0;
 }
 body main .mainadminpage{
-background-color: rgb(230, 230, 230	);
 width: 90%;
+margin-left:10%;
 }
 .btns{
     padding: 10px;
-    width: 100%;
+    width: 100% !important;
     background-color: inherit;
     border:none ;
     border-bottom:1px solid gray ;
@@ -132,17 +137,29 @@ width: 90%;
     text-align: start;
     font-weight: 700;
 }
+label.buttons{
+	width:100%;
+	
+}
 a#gomain{
     color: white;
 }
 .selected{
-	background-color: rgb(222, 228, 227);
-    border: none;
-    color: rgb(77,77,77);
+	background-color: rgb(222, 228, 227) !important;
+    border: none !important;
+    color: rgb(77,77,77) !important;
 }
 div.title{
 	background-color:white;
 }
-div.content{
+.delete{
 	background-color:white;
+	border:1px solid gray;
+	border-radius:20px;
+	padding:10px
+}
+.summernote{
+	resize:none;
+	width:100%;
+	height:180px;
 }

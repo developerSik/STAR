@@ -5,20 +5,22 @@
 <head>
 <meta charset="UTF-8">
 <title>관리자 페이지</title>
+<link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
+
 <link rel="stylesheet"
 	href="../../static/css/adminpage/adminconstructor.css">
 <link rel="stylesheet"
 	href="../../static/css/adminpage/see-answer-detail.css">
-<%-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
-  <!-- 서머노트를 위해 추가해야할 부분 -->
-  <script src="${pageContext.request.contextPath}/resources/summernote/summernote-lite.js"></script>
-  <script src="${pageContext.request.contextPath}/resources/summernote/lang/summernote-ko-KR.js"></script>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/summernote/summernote-lite.css">
- --%>
+  서머노트를 위해 추가해야할 부분
+ <script src="../../static/js/summernote/summernote-lite.js"></script>
+  <script src="../../static/js/summernote/lang/summernote-ko-KR.js"></script>
+  <link rel="stylesheet" href="../../static/css/summernote/summernote-lite.css">  -->
 </head>
 <body>
 	<main>
@@ -28,17 +30,14 @@
 			</div>
 			<p>사이트 관리</p>
 			<ul class="menubar">
-				<li><label for="btns"><input class="btns" type="button"
+				<li><label class="buttons" for="btns"><input class="btns" type="button"
 						value="메인페이지" onClick="location.href='mainadmin.jsp'"></label></li>
-				<li><label for="btns"><input class="btns" type="button"
+				<li><label class="buttons" for="btns"><input class="btns selected" type="button"
 						value="문의글 목록" onClick="location.href='answerlist.jsp'"></label></li>
-				<li><label for="btns"><input class="btns" type="button"
+				<li><label class="buttons" for="btns"><input class="btns" type="button"
 						value="신고 목록" onClick="location.href='reportlist.jsp'"></label></li>
-				<li><label for="btns"><input class="btns" type="button"
+				<li><label class="buttons" for="btns"><input class="btns" type="button"
 						value="회원정보 조회/수정" onClick="location.href='changeinfo.jsp'"></label></li>
-				<li><label for="btns"><input class="btns selected"
-						type="button" value="홈페이지 요소 수정"
-						onClick="location.href='updatepage.jsp'"></label></li>
 			</ul>
 		</nav>
 		<section class="mainadminpage">
@@ -79,8 +78,8 @@
 					</tr>
 				</table>
 				<div class="button-box">
-				<input type="submit" name="go-to-answer-list" value="문의목록"/>
-				<input type="submit" name="submit-answer" value="답변등록"/>
+				<input type="button" name="go-to-answer-list" value="문의목록" onClick="location.href='answerlist.jsp'"/>
+				<input type="submit" name="submit-answer" value="답변등록" />
 				</div>
 				</form>
 			</div>
@@ -88,9 +87,9 @@
 	</main>
 </body>
 <script>
-	$('.summernote').summernote({
+	/* $('.summernote').summernote({
 		height : 150,
 		lang : "ko-KR"
-	});
+	}); */
 </script>
 </html>
