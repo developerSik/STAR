@@ -22,7 +22,7 @@
 	            </p>
 	
 				<div class="inp_type_1 ico_pw form-errors form-password-rule input-pw-div">
-					<input type="password" name="passwd" placeholder="새 비밀번호(최소 8자 이상)" id="new_pw">
+					<input type="password" name="passwd" placeholder="새 비밀번호" id="new_pw">
 					<label id="new_pw_msg" class="validate_msg_label"></label>
 				<button type="button" class="reset_val">초기화</button>
 				</div>
@@ -40,4 +40,29 @@
 	    </section>
 	</div>
 </body>
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+
+    $("#new_pw_re").blur(function(){
+    
+    var pass = $("#new_pw").val();
+    var passcheck = $("#new_pw_re").val();
+
+ if(passcheck == pass){
+    $("#new_pw_re_msg").css('color','blue');
+    $("#new_pw_re_msg").text('비밀번호가 일치합니다.');
+ }
+
+ else if(passcheck != pass){
+    $("#new_pw_re_msg").css('color','red');
+    $("#new_pw_re_msg").text('비밀번호가 일치하지 않습니다.');
+    return false;
+ }
+ 
+    });
+});
+</script>
 </html>

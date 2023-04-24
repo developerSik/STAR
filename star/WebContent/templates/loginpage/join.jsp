@@ -38,17 +38,17 @@
 		
 		            <b>비밀번호 확인</b>
 		            <div class="inp_type_2 form-errors">
-		                <input type="password" name="upw_retry" placeholder="비밀번호를 입력해주세요." id="new_pw_re">
+		                <input type="password" name="upw_retry" placeholder="비밀번호를 다시 입력해주세요." id="new_pw_re">
 						<label id="new_pw_re_msg" class="validate_msg_label"></label>
 		            </div>
 		            
 		            <b>이 름</b>
 		            <div class="inp_type_2 form-errors form-username">
 		                <input type="text" name="uname" id="gcusername" placeholder="이름을 입력해주세요.">
-						<label id="" class="validate_msg_label" style="color: red;"></label>
+						<label id="name2" class="validate_msg_label" style="color: red;"></label>
 		            </div>
 		            
-		            <button type="button" id="joinBtn" class="btn_link gra_left_right_red btn_user_submit" disabled="" style="background-color: rgb(250, 250, 250); color: rgba(0, 0, 0, 0.16); border: none;">
+		            <button type="button" id="joinBtn" class="btn_link gra_left_right_red btn_user_submit"  style="background-color: rgb(250, 250, 250); color: rgba(0, 0, 0, 0.16); border: none;">
 		            	<span>가입하기</span>
 		            </button>
 		        </div>
@@ -56,4 +56,100 @@
 		</section>
 	</div>
 </body>
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+
+ $(document).ready(function() {
+
+    var youhyo =/([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/ ;
+    var youhyoname = /^[가-힣]{2,4}$/; 
+    var buttonhwal = document.getElementById('joinBtn');
+    
+//아이디 
+$("#gcuseremail").blur(function(){
+    var email = $("#gcuseremail").val();
+
+    if( email == '' || email == 'undefined') {
+        $("#gcuseremail_msg").css('color','red');
+        $("#gcuseremail_msg").text('이메일을 입력해 주세요');  
+        return false;
+}
+    else if(! youhyo.test(email)  ) {
+        $("#gcuseremail_msg").css('color','red');
+        $("#gcuseremail_msg").text('사용할 수 없는 이메일 입니다.');
+        return false;
+    }
+    else if( youhyo.test(email)  ) {
+        $("#gcuseremail_msg").css('color','blue');
+        $("#gcuseremail_msg").text('사용할 수 있는 이메일 입니다.');
+       
+    }
+});
+
+
+// 비번
+$("#new_pw_re").blur(function(){
+    
+    var pass = $("#new_pw").val();
+    var passcheck = $("#new_pw_re").val();
+
+ if(passcheck == pass){
+    $("#new_pw_re_msg").css('color','blue');
+    $("#new_pw_re_msg").text('비밀번호가 일치합니다.');
+ }
+
+ else if(passcheck != pass){
+    $("#new_pw_re_msg").css('color','red');
+    $("#new_pw_re_msg").text('비밀번호가 일치하지 않습니다.');
+    return false;
+ }
+
+});
+
+$("#new_pw").blur(function(){
+
+var pass = $("#new_pw").val();
+var passcheck = $("#new_pw_re").val();
+
+if(passcheck == pass){
+$("#new_pw_re_msg").css('color','blue');
+$("#new_pw_re_msg").text('비밀번호가 일치합니다.');
+}
+
+else if(passcheck != pass){
+$("#new_pw_re_msg").css('color','red');
+$("#new_pw_re_msg").text('비밀번호가 일치하지 않습니다.');
+return false;
+}
+});
+
+// 이름
+$("#gcusername").blur(function(){
+
+    var name = $("#gcusername").val();
+
+    if( name == '' || name == 'undefined') {
+        $("#name2").css('color','red');
+        $("#name2").text('이름을 입력해주세요.');  
+        return false;
+    }
+
+    else if(! youhyoname.test(name)  ) {
+        $("#name2").css('color','red');
+        $("#name2").text('제대로된 이름을 입력해주세요.');
+        return false;
+    }
+    else if(youhyoname.test(name)){
+        $("#name2").css('color','blue');
+        $("#name2").text('사용할 수 있는 이름 입니다.');
+       
+    }
+
+
+});    
+      
+});
+
+
+</script>
 </html>
