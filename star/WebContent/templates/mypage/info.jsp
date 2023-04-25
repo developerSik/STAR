@@ -69,19 +69,17 @@
 								<div>
 									<img src="https://image.goodchoice.kr/profile/ico/ico_21.png" alt>
 								</div>
-								<p>Naver 회원으로 로그인</p>
 							</div>
 							<div class="pw_input">
 								<div class="pw_input__title">
 									<b>이름</b>
-									<span class="title__uinfo">정상식</span>
+									<span class="title__uinfo"><c:out value = "${param.name}"/></span>
 								</div>
 								<section class="modifying-section" style="display: none;">
 									<p id="namewrap" class="inp_wrap remove form-errors">
-										<input id="name" type="text" placeholder="이름을 입력해주세요.">
+										<input id="name" type="text" placeholder="이름을 입력해주세요." value="">
 										<p id="pname"></p>
 									</p>
-									<button type="button" class="btn_etc btn_confirm active">딴거할래요</button>
 								</section>
 								<div class="pw_input__btns-wrap">
 									<button class="btns-wrap__edit-btn" type="button">수정</button>
@@ -95,7 +93,7 @@
 							<div class="pw_input">
 								<div class="pw_input__title">
 									<b>주소</b>
-									<span class="title__uinfo">경기도 수원시 장안구 정자동 수성로 245번길21</span>
+									<span class="title__uinfo"><c:out value="${param.address}"></span>
 								</div>
 								<section class="modifying-section" style="display: none;">
 									<p id="addresswrap" class="inp_wrap remove form-errors">
@@ -116,7 +114,7 @@
 							<div class="pw_input phone_confirm">
 								<div class="pw_input__title">
 									<b>휴대폰 번호</b>
-									<span class="title__uinfo">01034419435</span>
+									<span class="title__uinfo"><c:out value ="${param.phonenumber}"/></span>
 									<div class="safety_txt">개인 정보 보호를 위해 내 정보는 모두 안전하게 암호화됩니다.</div>
 								</div>
 								<section class="modifying-section" style="display: none;">
@@ -137,7 +135,7 @@
 							<div class="pw_input">
 								<div class="pw_input__title">
 									<b>나이</b>
-									<span class="title__uinfo">26</span>
+									<span class="title__uinfo"><c:out value="param.age"></span>
 								</div>
 								<section class="modifying-section" style="display: none;">
 									<p id="agewrap"class="inp_wrap remove form-errors">
@@ -156,7 +154,7 @@
 							<div class="pw_input">
 								<div class="pw_input__title">
 									<b>성별</b>
-									<span class="title__uinfo">남</span>
+									<span class="title__uinfo"><c:out value="${param.gender}"></span>
 								</div>
 								<section class="modifying-section" style="display: none;">
 									<p id="genderwrap" class="inp_wrap remove form-errors">
@@ -175,7 +173,7 @@
 							<div class="pw_input">
 								<div class="pw_input__title">
 									<b>이메일</b>
-									<span class="title__uinfo">hec5030@naver.com</span>
+									<span class="title__uinfo"><c:out value="${param.email}"></span>
 								</div>
 								<section class="modifying-section" style="display: none;">
 									<p id="emailwrap" class="inp_wrap remove form-errors">

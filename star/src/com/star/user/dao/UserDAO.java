@@ -10,4 +10,7 @@ public SqlSession sqlSession;
 	public UserDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
+	public void updateName(String userName) {
+		sqlSession.update("user.update",userName);
+	}
 }
