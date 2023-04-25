@@ -121,7 +121,10 @@ label {
     vertical-align: top;
 }
 
-
+input[type=checkbox].inp_chk_02:checked {
+    background: url(https://image.goodchoice.kr/images/web_v3/ico_chk.png) 0 -24px no-repeat;
+    background-size: 24px auto;
+}
 
 .terms_agree p a {
     display: inline-block;
@@ -151,6 +154,7 @@ button span {
     position: relative;
 }
 
+
 input[type=checkbox].inp_chk_02 {
     width: 24px;
     height: 24px;
@@ -159,3 +163,4 @@ input[type=checkbox].inp_chk_02 {
     background-size: 24px auto;
     cursor: pointer;
 }
+

@@ -63,7 +63,7 @@
         </section>
     </div>
 </body>
-<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 <script>
     $(document).ready(function () {
         $("#checkAll").click(function () {

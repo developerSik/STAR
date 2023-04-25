@@ -14,6 +14,8 @@
             <section>
                 <div>
                 <img style="width: 150px;
+                
+                
    					 height: 150px;
     				margin-left: -90px;
     				margin-top: -33px;" 
@@ -201,7 +203,7 @@
 	</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../static/js/onclick.js"></script>
-<script src="../../static/js/input.js"></script>
-<script src="../../static/js/header.js"></script>
+<script src="../../static/js/mypage/onclick.js"></script>
+<script src="../../static/js/mypage/input.js"></script>
+<script src="../../static/js/mypage/header.js"></script>
 </html>
