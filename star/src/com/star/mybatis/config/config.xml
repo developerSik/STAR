@@ -7,14 +7,14 @@
 	</settings>
 	
 	<typeAliases>
-		<typeAlias type="com.app.board.domain.BoardVO" alias="boardVO"/>
-		<typeAlias type="com.app.board.domain.AnswerVO" alias="answerVO"/>
-		<typeAlias type="com.app.board.domain.PetVO" alias="petVO"/>
-		<typeAlias type="com.app.board.domain.QuestVO" alias="questVO"/>
-		<typeAlias type="com.app.board.domain.ReportVO" alias="reportVO"/>
-		<typeAlias type="com.app.board.domain.ReviewVO" alias="reviewVO"/>
-		<typeAlias type="com.app.board.domain.UseVO" alias="useVO"/>
-		<typeAlias type="com.app.board.domain.UserVO" alias="userVO"/>
+		<typeAlias type="com.star.board.domain.BoardVO" alias="boardVO"/>
+		<typeAlias type="com.star.board.domain.AnswerVO" alias="answerVO"/>
+		<typeAlias type="com.star.board.domain.PetVO" alias="petVO"/>
+		<typeAlias type="com.star.board.domain.QuestVO" alias="questVO"/>
+		<typeAlias type="com.star.board.domain.ReportVO" alias="reportVO"/>
+		<typeAlias type="com.star.board.domain.ReviewVO" alias="reviewVO"/>
+		<typeAlias type="com.star.board.domain.UseVO" alias="useVO"/>
+		<typeAlias type="com.star.board.domain.UserVO" alias="userVO"/>
 	
 	</typeAliases>
 
