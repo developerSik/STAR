@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.star.Result;
 import com.star.user.dao.UserDAO;
-import com.star.user.domain.UserVO;
 
 public class ChangePhoneNumberOkController {
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
