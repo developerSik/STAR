@@ -8,14 +8,13 @@
 	
 	<typeAliases>
 		<typeAlias type="com.star.board.domain.BoardVO" alias="boardVO"/>
-		<typeAlias type="com.star.board.domain.AnswerVO" alias="answerVO"/>
-		<typeAlias type="com.star.board.domain.PetVO" alias="petVO"/>
-		<typeAlias type="com.star.board.domain.QuestVO" alias="questVO"/>
-		<typeAlias type="com.star.board.domain.ReportVO" alias="reportVO"/>
-		<typeAlias type="com.star.board.domain.ReviewVO" alias="reviewVO"/>
-		<typeAlias type="com.star.board.domain.UseVO" alias="useVO"/>
-		<typeAlias type="com.star.board.domain.UserVO" alias="userVO"/>
-	
+		<typeAlias type="com.star.answer.domain.AnswerVO" alias="answerVO"/>
+		<typeAlias type="com.star.pet.domain.PetVO" alias="petVO"/>
+		<typeAlias type="com.star.quest.domain.QuestVO" alias="questVO"/>
+		<typeAlias type="com.star.report.domain.ReportVO" alias="reportVO"/>
+		<typeAlias type="com.star.review.domain.ReviewVO" alias="reviewVO"/>
+		<typeAlias type="com.star.use.domain.UseVO" alias="useVO"/>
+		<typeAlias type="com.star.user.domain.UserVO" alias="userVO"/>
 	</typeAliases>
 
 	<environments default="mysql">
