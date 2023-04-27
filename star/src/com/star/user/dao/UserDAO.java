@@ -9,12 +9,13 @@ import com.star.mybatis.config.MyBatisConfig;
 import com.star.user.domain.UserVO;
 
 public class UserDAO {
-public SqlSession sqlSession;
+	public SqlSession sqlSession;
 
 	public UserDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 	
+
 //	public void insert(UserVO userVO) {
 //		sqlSession.insert("user.insert", userVO);
 //	}
@@ -33,4 +34,10 @@ public SqlSession sqlSession;
 		
 		
 	}
+
+	public List<UserVO> selectCurrentSitters(){
+		return sqlSession.selectList("user.selectCurrentSitters");
+	}
+	
+
 }
