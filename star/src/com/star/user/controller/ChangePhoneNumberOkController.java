@@ -10,19 +10,16 @@ import com.star.Result;
 import com.star.user.dao.UserDAO;
 import com.star.user.domain.UserVO;
 
-public class ChangeNameOkController {
+public class ChangePhoneNumberOkController {
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		req.setCharacterEncoding("UTF-8");
 		UserDAO userDAO = new UserDAO();
 		Result result = new Result();
-		userDAO.updateName(req.getParameter("userName"),1L);  
+		userDAO.updatePhoneNumber(req.getParameter("userPhoneNumber"),1L);  
 //		userVO.setUserNumber(Long.valueOf(req.getParameter("userNumber")));
-		
 		
 		result.setRedirect(true);
 		result.setPath("myInfo.user");
-		
-		
 		
 		return result;
 	}
