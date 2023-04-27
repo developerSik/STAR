@@ -130,9 +130,29 @@ public class UserVO {
 				+ "]";
 	}
 
-	public UserVO(Long userNumber) {
-		super();
-		this.userNumber = userNumber;
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((userNumber == null) ? 0 : userNumber.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		UserVO other = (UserVO) obj;
+		if (userNumber == null) {
+			if (other.userNumber != null)
+				return false;
+		} else if (!userNumber.equals(other.userNumber))
+			return false;
+		return true;
 	}
 
 	
