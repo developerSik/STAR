@@ -8,7 +8,6 @@
 	
 	<typeAliases>
 
-		<typeAlias type="com.star.user.domain.UserVO" alias="UserVO"/>
 		<typeAlias type="com.star.board.domain.BoardVO" alias="boardVO"/>
 		<typeAlias type="com.star.answer.domain.AnswerVO" alias="answerVO"/>
 		<typeAlias type="com.star.pet.domain.PetVO" alias="petVO"/>
@@ -16,7 +15,8 @@
 		<typeAlias type="com.star.report.domain.ReportVO" alias="reportVO"/>
 		<typeAlias type="com.star.review.domain.ReviewVO" alias="reviewVO"/>
 		<typeAlias type="com.star.use.domain.UseVO" alias="useVO"/>
-
+		<typeAlias type="com.star.user.domain.UserVO" alias="UserVO"/>
+	
 	</typeAliases>
 
 	<environments default="mysql">
@@ -33,13 +33,6 @@
 	<mappers>
 		<mapper resource="com/star/mybatis/mapper/userMapper.xml"/>
  		<mapper resource="com/star/mybatis/mapper/boardMapper.xml"/>
-		<mapper resource="com/star/mybatis/mapper/useMapper.xml"/>
-		<mapper resource="com/star/mybatis/mapper/petMapper.xml"/>
-		<mapper resource="com/star/mybatis/mapper/answerMapper.xml"/>
-		<mapper resource="com/star/mybatis/mapper/fileMapper.xml"/>
-		<mapper resource="com/star/mybatis/mapper/questMapper.xml"/>
-		<mapper resource="com/star/mybatis/mapper/reportMapper.xml"/>
-		<mapper resource="com/star/mybatis/mapper/reviewMapper.xml"/>
 	</mappers>
 </configuration>
 
