@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../../static/css/mypage/petsitterform.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/petsitterform.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 
 <meta charset="UTF-8">
@@ -71,18 +71,16 @@
 								<div class="title_block">
 									<b>제목</b>
 									<p class="inp_wrap">
-										<input class="js-email-string" type="text" placeholder="제목을 입력해주세요." name="${user.userTitle}" value="${user.userTitle}" >
+										<input class="js-email-string" type="text" placeholder="제목을 입력해주세요." name="userTitle" value="${user.userTitle}" >
 										<input type="text" class="js-email-string" style="display:none;">
 									</p>
 								</div>
 							</section>
 							<section class="text_wrap">
-								<b>내용</b>
+								<b>내용<c:out value="${user.userContent}"/></b>
 								<div>
-									<textarea rows="" cols="" placeholder="돌보미가 됨에 있어 책임감을 가지고 신청해주세요." name="${user.userContent}"><c:out value="${user.userContent}"/></textarea>
-								</div> 
-							</section>
-							<section class="btn_wrap">
+									 <textarea rows="" cols="" placeholder="돌보미가 됨에 있어 책임감을 가지고 신청해주세요." name="userContent"></textarea>
+								</div>
 								<input type="hidden" value="${user.userNumber}">
 								<button class="btn_red_fill" type="submit">작성 완료</button>
 							</section>

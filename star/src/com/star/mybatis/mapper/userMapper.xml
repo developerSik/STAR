@@ -34,7 +34,7 @@
 	</select>
 	<update id="petSitterFormOk">
 		update tbl_user
-		set user_title = #{userTitle} and user_content = #{userContent}
+		set user_title = #{userTitle} , user_content = #{userContent}
 		where user_number = #{userNumber}
 	</update>
 </mapper>

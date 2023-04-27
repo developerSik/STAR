@@ -172,7 +172,7 @@
 					</form>
 				</div>
 				<div class="bot_btn">
-					<p>여기어때를 이용하고 싶지 않으신가요?</p>
+					<p>스타를 이용하고 싶지 않으신가요?</p>
 					<button type="button">로그아웃</button>
 					<button type="button">
 						<a href="joinout.jsp">회원탈퇴</a>

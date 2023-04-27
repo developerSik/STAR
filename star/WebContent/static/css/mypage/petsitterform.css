@@ -220,7 +220,7 @@ header section .btn_srch {
 }
 
 #menu.active {
-	position: fixed;
+	position: fixed; 
 	height: 72px;
 	display: flex;
 	justify-content: space-between;
