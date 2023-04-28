@@ -13,8 +13,6 @@ public class UserVO {
 	private String userTitle;
 	private String userContent;
 	private int userStar;
-	private String userRegistrationDate;
-	private String userEndDate;
 	
 	public UserVO() {;}
 
@@ -92,29 +90,16 @@ public class UserVO {
 	public void setUserStar(int userStar) {
 		this.userStar = userStar;
 	}
+
  
-	public String getUserRegistrationDate() {
-		return userRegistrationDate;
+
+	@Override
+	public String toString() {
+		return "UserVO [userNumber=" + userNumber + ", userId=" + userId + ", userPassword=" + userPassword
+				+ ", userName=" + userName + ", userAddress=" + userAddress + ", userPhonenumber=" + userPhonenumber
+				+ ", userAge=" + userAge + ", userGender=" + userGender + ", userStatus=" + userStatus + ", userTitle="
+				+ userTitle + ", userContent=" + userContent + ", userStar=" + userStar + "]";
 	}
-
-
-
-	public void setUserRegistrationDate(String userRegistrationDate) {
-		this.userRegistrationDate = userRegistrationDate;
-	}
-
-
-
-	public String getUserEndDate() {
-		return userEndDate;
-	}
-
-
-
-	public void setUserEndDate(String userEndDate) {
-		this.userEndDate = userEndDate;
-	}
-
 
 
 	@Override
@@ -139,18 +124,16 @@ public class UserVO {
 		} else if (!userNumber.equals(other.userNumber))
 			return false;
 		return true;
-	}
 
-	@Override
-	public String toString() {
-		return "UserVO [userNumber=" + userNumber + ", userId=" + userId + ", userPassword=" + userPassword
-				+ ", userName=" + userName + ", userAddress=" + userAddress + ", userPhonenumber=" + userPhonenumber
-				+ ", userAge=" + userAge + ", userGender=" + userGender + ", userStatus=" + userStatus + ", userTitle="
-				+ userTitle + ", userContent=" + userContent + ", userStar=" + userStar + "]";
-	}
 	
+
+
 	
-	
-	
+
+	}	
+
 	
 }
+	
+	
+	

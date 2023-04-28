@@ -28,7 +28,7 @@
   	<servlet-class>com.star.answer.AnswerFrontController</servlet-class>
   </servlet>
   
-   <servlet-mapping>
+  <servlet-mapping>
   	<servlet-name>File</servlet-name>
   	<url-pattern>*.File</url-pattern>
   </servlet-mapping>
@@ -37,7 +37,7 @@
   	<servlet-class>com.star.file.FileFrontController</servlet-class>
   </servlet>
   
-   <servlet-mapping>
+  <servlet-mapping>
   	<servlet-name>Pet</servlet-name>
   	<url-pattern>*.Pet</url-pattern>
   </servlet-mapping>
@@ -46,7 +46,7 @@
   	<servlet-class>com.star.pet.PetFrontController</servlet-class>
   </servlet>
 
-   <servlet-mapping>
+  <servlet-mapping>
   	<servlet-name>Quest</servlet-name>
   	<url-pattern>*.Quest</url-pattern>
   </servlet-mapping>
@@ -55,7 +55,7 @@
   	<servlet-class>com.star.Quest.QuestFrontController</servlet-class>
   </servlet>
   
-   <servlet-mapping>
+  <servlet-mapping>
   	<servlet-name>Report</servlet-name>
   	<url-pattern>*.Report</url-pattern>
   </servlet-mapping>
@@ -64,16 +64,16 @@
   	<servlet-class>com.star.Report.ReportFrontController</servlet-class>
   </servlet>
 
-   <servlet-mapping>
+  <servlet-mapping>
   	<servlet-name>Review</servlet-name>
-  	<url-pattern>*.Review</url-pattern>
+  	<url-pattern>*.review</url-pattern>
   </servlet-mapping>
   <servlet>
   	<servlet-name>Review</servlet-name>
-  	<servlet-class>com.star.Review.ReviewFrontController</servlet-class>
+  	<servlet-class>com.star.review.ReviewFrontController</servlet-class>
   </servlet>
   
-   <servlet-mapping>
+  <servlet-mapping>
   	<servlet-name>Use</servlet-name>
   	<url-pattern>*.use</url-pattern>
   </servlet-mapping>
@@ -92,8 +92,5 @@
   	<servlet-name>User</servlet-name>
   	<servlet-class>com.star.user.UserFrontController</servlet-class>
   </servlet>
-  
 
-  
-  
 </web-app>
