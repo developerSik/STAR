@@ -13,7 +13,6 @@
     <div class="wrap show">
 	<header id="menu">
         <section>
-            <div>
 			<div>
                 <img style="width: 150px; height: 150px; margin-left: -90px; margin-top: -33px;" src="../../static/image/3.png">
                 </div>
@@ -28,6 +27,7 @@
             </ul>
         </section>
    	 </header>
+   	 </div>
         <form id="product_filter_form" method="get">
             <div class="listpage">
                 <div class="sub_top_wrap">

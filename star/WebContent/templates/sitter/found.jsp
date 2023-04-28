@@ -65,7 +65,22 @@
                                 </li>
                             </ul>
                         </section>
-                        <section><strong>서울<button type="button">모두 보기</button></strong>
+<%--                  <div id=search>
+                  <form action="${pageContext.request.contextPath}/sitterList.user" name="search-form">
+			        <div>
+			        	<div class="searchseoul"><strong>구 검색</strong></div>
+			        	<select name="type">
+			        		<option value="title&content&writer" ${type == null ? 'selected' : ''}>전체</option>
+			        	</select>
+			        </div>
+                    <div class="search-container">
+                        <input type="text" autocomplete="off" name="keyword" value="${keyword}">
+                        <button type="submit"><img src="${pageContext.request.contextPath}/static/image/search.png"
+                                width="20px"></button>
+                    </div>
+                </form>
+                </div> --%>
+                         <section><strong>서울<button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li>
                                 	<input type="checkbox" id="tmino_0" class="inp_chk" value="56">
@@ -103,7 +118,7 @@
                         </section> -->
                     </div>
                     <div class="list_wrap">
-                        <div class="top_sort">
+    <!--                     <div class="top_sort">
                                 <button type="button" class="btn_map"></button>
                              <div class="pc">
                                 <div class="btn_wrap width_4">
@@ -112,7 +127,7 @@
                                     </button>
                                 </div>
                             </div> 
-                        </div>
+                        </div> -->
                         <div id="poduct_list_area">
                         	<ul>
                         	</ul>
