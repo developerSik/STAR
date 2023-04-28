@@ -16,7 +16,13 @@ public class UserDAO {
 	public UserDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
-	
+//	로그
+	public Long login(String userId,String userPassword) {
+		HashMap<String, String> loginMap = new HashMap<String,String>();
+		loginMap.put("userId", userId);
+		loginMap.put("userPassword", userPassword); 
+		return sqlSession.selectOne("user.login", loginMap);
+	}
 
 //	public void insert(UserVO userVO) {
 //		sqlSession.insert("user.insert", userVO);
@@ -87,7 +93,7 @@ public class UserDAO {
 	public void petSitterFormOk(String userTitle,String userContent,Long userNumber) {
 		HashMap<Object, Object> updateMap = new HashMap<Object, Object>();
 		updateMap.put("userTitle", userTitle);
-		updateMap.put("userConetent", userContent);
+		updateMap.put("userContent", userContent);
 		updateMap.put("userNumber", userNumber);
 		sqlSession.update("user.petSitterFormOk",updateMap);
 	}

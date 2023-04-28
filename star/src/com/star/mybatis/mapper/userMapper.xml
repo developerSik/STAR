@@ -31,9 +31,6 @@
 	where u.user_title is not null
 	order by u.user_registrationdate desc
 	</select>
-
-
-
 	<update id="updateName">
 		update tbl_user
 		set user_name = #{userName}
@@ -67,9 +64,12 @@
 	</select>
 	<update id="petSitterFormOk">
 		update tbl_user
-		set user_title = #{userTitle} and user_content = #{userContent}
+		set user_title = #{userTitle} , user_content = #{userContent}
 		where user_number = #{userNumber}
 	</update>
+	<select id="login" resultType="Long">
+		select user_number from tbl_user where user_id = ${userId} and user_password = ${userPassword}
+	</select>
 </mapper>
 
 

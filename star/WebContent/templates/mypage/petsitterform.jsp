@@ -41,7 +41,7 @@
 			<nav>
 				<ul>
 					<li>
-						<a  href="javascript:location.href='${pageContext.request.contextPath}/myInfo.user">내 정보 관리</a>
+						<a  href="javascript:location.href='${pageContext.request.contextPath}/myInfo.user'">내 정보 관리</a>
 					</li>
 					<li>
 						<a class="mypageatag" href="javascript:location.href='${pageContext.request.contextPath}/petsitterform.user'">돌보미 신청</a>
@@ -71,7 +71,7 @@
 								<div class="title_block">
 									<b>제목</b>
 									<p class="inp_wrap">
-										<input class="js-email-string" type="text" placeholder="제목을 입력해주세요." value="${user.userTitle}" >
+										<input class="js-email-string" type="text" placeholder="제목을 입력해주세요." name="userTitle" value="${user.userTitle}" >
 										<input type="text" class="js-email-string" style="display:none;">
 									</p>
 								</div>
@@ -79,7 +79,7 @@
 							<section class="text_wrap">
 								<b>내용</b>
 								<div>
-									<textarea rows="" cols="" placeholder="돌보미가 됨에 있어 책임감을 가지고 신청해주세요." ><c:out value="${user.userContent}"/></textarea>
+									<textarea rows="" cols="" placeholder="돌보미가 됨에 있어 책임감을 가지고 신청해주세요." name="userContent"><c:out value="${user.userContent}"/></textarea>
 								</div> 
 							</section>
 							<section class="btn_wrap">
