@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.star.Result;
 import com.star.user.dao.UserDAO;
@@ -14,7 +15,8 @@ public class ChangeAgeOkController {
 		req.setCharacterEncoding("UTF-8");
 		UserDAO userDAO = new UserDAO();
 		Result result = new Result();
-		userDAO.updateAge(Integer.parseInt(req.getParameter("userAge")),1L);  
+		HttpSession session = req.getSession();
+		userDAO.updateAge(Integer.parseInt(req.getParameter("userAge")),(Long)session.getAttribute("userNumber"));  
 //		Long.valueOf(req.getParameter("userNumber"));
 		
 		

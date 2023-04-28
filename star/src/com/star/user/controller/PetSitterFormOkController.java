@@ -4,6 +4,8 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import com.star.Result;
 import com.star.user.dao.UserDAO;
 
@@ -12,8 +14,8 @@ public class PetSitterFormOkController {
 		req.setCharacterEncoding("UTF-8");
 		UserDAO userDAO = new UserDAO();
 		Result result = new Result();
-		userDAO.petSitterFormOk(req.getParameter("userTitle"),req.getParameter("userContent"),1L);  
-		System.out.println(req.getParameter("userTitle")+req.getParameter("userContent"));
+		HttpSession session = req.getSession();
+		userDAO.petSitterFormOk(req.getParameter("userTitle"),req.getParameter("userContent"),(Long)session.getAttribute("userNumber"));  
 		result.setPath("petsitterform.user");
 		return result;
 	}
