@@ -71,7 +71,7 @@
 							<div class="pw_input">
 								<div class="pw_input__title">
 									<b>이름</b>
-									<span class="title__uinfo"><c:out value="${user.userName}"/></span>
+									<span class="title__uinfo"><c:out value="${user.userName}"/><c:out value="${user.userNumber}"/></span>
 								</div>
 								<section class="modifying-section" style="display: none;">
 									<p id="namewrap" class="inp_wrap remove form-errors">

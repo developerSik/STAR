@@ -1,5 +1,7 @@
 package com.star.user.dao;
 
+
+
 import java.util.HashMap;
 import java.util.List;
 
@@ -9,11 +11,42 @@ import com.star.mybatis.config.MyBatisConfig;
 import com.star.user.domain.UserVO;
 
 public class UserDAO {
-public SqlSession sqlSession;
+	public SqlSession sqlSession;
 
 	public UserDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
+//	로그
+	public Long login(String userId,String userPassword) {
+		HashMap<String, String> loginMap = new HashMap<String,String>();
+		loginMap.put("userId", userId);
+		loginMap.put("userPassword", userPassword); 
+		return sqlSession.selectOne("user.login", loginMap);
+	}
+
+//	public void insert(UserVO userVO) {
+//		sqlSession.insert("user.insert", userVO);
+//	}
+//	
+//	public UserVO selectSitter(Long userId) {
+//		return sqlSession.selectOne("user.select", userId);
+//	}
+	
+//	펫시터 상세보기
+	public UserVO selectSitterdetail(Long userNumber) {
+		return sqlSession.selectOne("user.selectSitterdetail", userNumber);
+	}
+//	펫시터 찾기
+	public List<UserVO> selectAllSitter(){
+		return sqlSession.selectList("user.selectAllSitter");
+	}
+
+	public List<UserVO> selectCurrentSitters(){
+		return sqlSession.selectList("user.selectCurrentSitters");
+	}
+	
+
+
 	//이름바꾸기
 	public void updateName(String userName, Long userNumber) {
 		HashMap<String, Object> updateMap = new HashMap<String, Object>();
@@ -60,9 +93,10 @@ public SqlSession sqlSession;
 	public void petSitterFormOk(String userTitle,String userContent,Long userNumber) {
 		HashMap<Object, Object> updateMap = new HashMap<Object, Object>();
 		updateMap.put("userTitle", userTitle);
-		updateMap.put("userConetent", userContent);
+		updateMap.put("userContent", userContent);
 		updateMap.put("userNumber", userNumber);
 		sqlSession.update("user.petSitterFormOk",updateMap);
 	}
 	
+
 }

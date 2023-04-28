@@ -13,6 +13,13 @@ public class UserVO {
 	private String userTitle;
 	private String userContent;
 	private int userStar;
+	private String userRegistrationDate;
+	private String userEndDate;
+	
+	public UserVO() {;}
+
+	
+
 	public Long getUserNumber() {
 		return userNumber;
 	}
@@ -85,6 +92,31 @@ public class UserVO {
 	public void setUserStar(int userStar) {
 		this.userStar = userStar;
 	}
+ 
+	public String getUserRegistrationDate() {
+		return userRegistrationDate;
+	}
+
+
+
+	public void setUserRegistrationDate(String userRegistrationDate) {
+		this.userRegistrationDate = userRegistrationDate;
+	}
+
+
+
+	public String getUserEndDate() {
+		return userEndDate;
+	}
+
+
+
+	public void setUserEndDate(String userEndDate) {
+		this.userEndDate = userEndDate;
+	}
+
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -108,6 +140,7 @@ public class UserVO {
 			return false;
 		return true;
 	}
+
 	@Override
 	public String toString() {
 		return "UserVO [userNumber=" + userNumber + ", userId=" + userId + ", userPassword=" + userPassword
@@ -119,5 +152,5 @@ public class UserVO {
 	
 	
 	
-
+	
 }

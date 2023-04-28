@@ -75,7 +75,7 @@
   
    <servlet-mapping>
   	<servlet-name>Use</servlet-name>
-  	<url-pattern>*.Use</url-pattern>
+  	<url-pattern>*.use</url-pattern>
   </servlet-mapping>
   <servlet>
   	<servlet-name>Use</servlet-name>
@@ -92,6 +92,7 @@
   	<servlet-name>User</servlet-name>
   	<servlet-class>com.star.user.UserFrontController</servlet-class>
   </servlet>
+  
 
   
   

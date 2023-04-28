@@ -13,18 +13,31 @@ import com.star.user.controller.ChangeAgeOkController;
 import com.star.user.controller.ChangeGenderOkController;
 import com.star.user.controller.ChangeNameOkController;
 import com.star.user.controller.ChangePhoneNumberOkController;
+import com.star.user.controller.LoginOkController;
 import com.star.user.controller.MyInfoController;
 import com.star.user.controller.PetSitterFormController;
 import com.star.user.controller.PetSitterFormOkController;
+import com.star.user.controller.SitterDetailOkController;
+import com.star.user.controller.SitterListOkController;
 
 public class UserFrontController extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setCharacterEncoding("UTF-8");
-		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
-		Result result = null;
-		if(target.equals("myInfo")) {
+		String target = req.getRequestURI().replace("/", "").split("\\.")[0];
+		Result result = new Result();
+//		if(target.equals("loginOk")) {
+//			result = new LoginOkController().execute(req,resp);
+//		}else
+		if(target.equals("sitterList")) {
+			result = new SitterListOkController().execute(req, resp);
+			
+		}else if(target.equals("sitterDetailOk")) {
+			result = new SitterDetailOkController().execute(req, resp);
+		
+		
+		}else if(target.equals("myInfo")) {
 			result = new MyInfoController().execute(req, resp);
 			
 		}else if(target.equals("changeNameOk")) {
@@ -49,15 +62,6 @@ public class UserFrontController extends HttpServlet {
 		result = new PetSitterFormOkController().execute(req, resp);
 		
 		}
-		
-		
-		
-		
-		
-		
-		 
-		
-		
 		
 		
 		
