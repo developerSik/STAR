@@ -14,6 +14,7 @@ public class UserDAO {
 	public UserDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
+
 	
 
 //	public void insert(UserVO userVO) {
@@ -39,5 +40,4 @@ public class UserDAO {
 		return sqlSession.selectList("user.selectCurrentSitters");
 	}
 	
-
 }

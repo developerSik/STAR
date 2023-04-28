@@ -11,11 +11,11 @@ import com.star.Result;
 import com.star.user.controller.SitterDetailOkController;
 import com.star.user.controller.SitterListOkController;
 
-
 public class UserFrontController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setCharacterEncoding("UTF-8");
+
 		String target = req.getRequestURI().replace("/", "").split("\\.")[0];
 		Result result = new Result();
 		
@@ -37,7 +37,6 @@ public class UserFrontController extends HttpServlet {
 				req.getRequestDispatcher(result.getPath()).forward(req, resp);
 			}
 		}
-		
 	}
 	
 	@Override

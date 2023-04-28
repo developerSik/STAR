@@ -3,7 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/info.css">
+=======
 <link rel="stylesheet" href="../../static/css/mypage/info.css">
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 <meta charset="UTF-8">
 <title>마이페이지</title>
@@ -203,7 +207,13 @@
 	</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<<<<<<< HEAD
+<script src="${pageContext.request.contextPath}/static/js/mypage/onclick.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage/input.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
+=======
 <script src="../../static/js/mypage/onclick.js"></script>
 <script src="../../static/js/mypage/input.js"></script>
 <script src="../../static/js/mypage/header.js"></script>
+>>>>>>> ebd3b5f64560de68450c6739a38ec4aa5d68fa82
 </html>
