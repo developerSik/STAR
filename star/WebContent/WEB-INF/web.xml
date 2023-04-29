@@ -64,14 +64,14 @@
   	<servlet-class>com.star.Quest.QuestFrontController</servlet-class>
   </servlet>
   
-   <servlet-mapping>
-  	<servlet-name>Report</servlet-name>
-  	<url-pattern>*.Report</url-pattern>
-  </servlet-mapping>
   <servlet>
   	<servlet-name>Report</servlet-name>
-  	<servlet-class>com.star.Report.ReportFrontController</servlet-class>
+  	<servlet-class>com.star.report.ReportFrontController</servlet-class>
   </servlet>
+   <servlet-mapping>
+  	<servlet-name>Report</servlet-name>
+  	<url-pattern>*.report</url-pattern>
+  </servlet-mapping>
 
    <servlet-mapping>
   	<servlet-name>Review</servlet-name>

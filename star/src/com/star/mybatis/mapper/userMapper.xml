@@ -21,7 +21,10 @@
 	<select id="selectAllSitter" resultType="UserVO">
 		select user_name, user_star, user_age, user_gender, user_address
 		from tbl_user
-		where user_title is not null and user_content is not null
+		where user_title is not null and user_content is not null 
+		<if test="keyword != null">
+			and user_address like concat('%', #{keyword}, '%')
+		</if>
 	</select>
 
 

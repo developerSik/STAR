@@ -43,11 +43,11 @@
                                 </span>
                             </div>
                         </section>
-                        <h3>상세조건</h3>
+<!--                         <h3>상세조건</h3>
                         <div class="btn_wrap">
                             <button type="button submit">초기화</button>
                             <button type="submit">적용</button>
-                        </div>
+                        </div> -->
                        
                         <section>
                         <strong>돌봄이 유형</strong>
@@ -65,13 +65,10 @@
                                 </li>
                             </ul>
                         </section>
-<%--                  <div id=search>
+                 <div id=search>
                   <form action="${pageContext.request.contextPath}/sitterList.user" name="search-form">
 			        <div>
 			        	<div class="searchseoul"><strong>구 검색</strong></div>
-			        	<select name="type">
-			        		<option value="title&content&writer" ${type == null ? 'selected' : ''}>전체</option>
-			        	</select>
 			        </div>
                     <div class="search-container">
                         <input type="text" autocomplete="off" name="keyword" value="${keyword}">
@@ -79,8 +76,8 @@
                                 width="20px"></button>
                     </div>
                 </form>
-                </div> --%>
-                         <section><strong>서울<button type="button">모두 보기</button></strong>
+                </div>
+                         <!-- <section><strong>서울<button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li>
                                 	<input type="checkbox" id="tmino_0" class="inp_chk" value="56">
@@ -99,7 +96,7 @@
                                 <li><input type="checkbox" id="tmino_23" class="inp_chk"
                                         value="332"><label for="tmino_23" class="label_chk">마포구</label></li>
                             </ul>
-                        </section>
+                        </section> -->
                         <!-- <section><strong><button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li><input type="checkbox" id="tmino_37" class="inp_chk"
@@ -290,6 +287,7 @@ document.addEventListener('scroll', () => {
 <script>
 	let users = `${users}`;
 	let contextPath = `${pageContext.request.contextPath}`;
+	console.log(users);
 </script>
 <script src="${pageContext.request.contextPath}/static/js/sitter/list.js"></script>
 </html>
