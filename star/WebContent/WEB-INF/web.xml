@@ -19,7 +19,29 @@
      <servlet-class>com.star.report.ReportFrontController</servlet-class>
   </servlet>
 
+<<<<<<< HEAD
   <servlet-mapping>
+=======
+   <servlet-mapping>
+  	<servlet-name>Quest</servlet-name>
+  	<url-pattern>*.Quest</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>Quest</servlet-name>
+  	<servlet-class>com.star.Quest.QuestFrontController</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Report</servlet-name>
+  	<servlet-class>com.star.report.ReportFrontController</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>Report</servlet-name>
+  	<url-pattern>*.report</url-pattern>
+  </servlet-mapping>
+
+   <servlet-mapping>
+>>>>>>> starsam
   	<servlet-name>Review</servlet-name>
   	<url-pattern>*.review</url-pattern>
   </servlet-mapping>

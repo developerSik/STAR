@@ -1,6 +1,7 @@
 package com.star.report.domain;
 
 public class ReportDTO {
+
    private Long reportId;
    private String reportTitle;
    private Long userNumber;
