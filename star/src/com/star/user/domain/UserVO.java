@@ -91,6 +91,7 @@ public class UserVO {
 		this.userStar = userStar;
 	}
 
+
  
 
 	@Override
@@ -100,6 +101,7 @@ public class UserVO {
 				+ ", userAge=" + userAge + ", userGender=" + userGender + ", userStatus=" + userStatus + ", userTitle="
 				+ userTitle + ", userContent=" + userContent + ", userStar=" + userStar + "]";
 	}
+
 
 
 	@Override

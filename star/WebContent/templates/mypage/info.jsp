@@ -47,7 +47,7 @@
 						<a href="javascript:location.href='${pageContext.request.contextPath}/petsitterform.user'">돌보미 신청</a>
 					</li>
 					<li>
-						<a href="carelist.jsp">돌봄 내역</a>
+						<a href="javascript:location.href='${pageContext.request.contextPath}/careList.use'">돌봄 내역</a>
 					</li>
 					<li>
 						<a href="reservationlist.jsp">이용 내역</a>

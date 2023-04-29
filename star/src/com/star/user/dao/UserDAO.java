@@ -88,6 +88,7 @@ public class UserDAO {
 	public UserVO selectpetSitterForm(Long userNumber) {
 		return sqlSession.selectOne	("user.selectpetSitterForm", userNumber);
 	}
+	//펫시터 폼 작성완료
 	public void petSitterFormOk(String userTitle,String userContent,Long userNumber) {
 		HashMap<Object, Object> updateMap = new HashMap<Object, Object>();
 		updateMap.put("userTitle", userTitle);
@@ -95,5 +96,6 @@ public class UserDAO {
 		updateMap.put("userNumber", userNumber);
 		sqlSession.update("user.petSitterFormOk",updateMap);
 	}
+
 
 }
