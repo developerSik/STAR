@@ -55,33 +55,37 @@
   	<servlet-class>com.star.Quest.QuestFrontController</servlet-class>
   </servlet>
   
-   <servlet-mapping>
-  	<servlet-name>Report</servlet-name>
-  	<url-pattern>*.Report</url-pattern>
-  </servlet-mapping>
-  <servlet>
-  	<servlet-name>Report</servlet-name>
-  	<servlet-class>com.star.Report.ReportFrontController</servlet-class>
-  </servlet>
+  -->
 
-   <servlet-mapping>
-  	<servlet-name>Review</servlet-name>
-  	<url-pattern>*.Review</url-pattern>
+    <servlet-mapping>
+     <servlet-name>Review</servlet-name>
+     <url-pattern>*.review</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>Review</servlet-name>
-  	<servlet-class>com.star.Review.ReviewFrontController</servlet-class>
+  
+     <servlet-name>Review</servlet-name>
+     <servlet-class>com.star.review.ReviewFrontController</servlet-class>
+  </servlet>
+  
+     <servlet-mapping>
+     <servlet-name>Report</servlet-name>
+     <url-pattern>*.report</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+     <servlet-name>Report</servlet-name>
+     <servlet-class>com.star.report.ReportFrontController</servlet-class>
   </servlet>
   
    <servlet-mapping>
   	<servlet-name>Use</servlet-name>
   	<url-pattern>*.use</url-pattern>
   </servlet-mapping>
+  
   <servlet>
   	<servlet-name>Use</servlet-name>
-  	<servlet-class>com.star.Use.UseFrontController</servlet-class>
+  	<servlet-class>com.star.use.UseFrontController</servlet-class>
   </servlet>
-   -->
    
    <servlet-mapping>
   	<servlet-name>User</servlet-name>

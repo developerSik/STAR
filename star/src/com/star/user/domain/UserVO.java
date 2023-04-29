@@ -13,8 +13,6 @@ public class UserVO {
 	private String userTitle;
 	private String userContent;
 	private int userStar;
-	private String userRegistrationDate;
-	private String userEndDate;
 	
 	public UserVO() {;}
 
@@ -93,27 +91,6 @@ public class UserVO {
 		this.userStar = userStar;
 	}
  
-	public String getUserRegistrationDate() {
-		return userRegistrationDate;
-	}
-
-
-
-	public void setUserRegistrationDate(String userRegistrationDate) {
-		this.userRegistrationDate = userRegistrationDate;
-	}
-
-
-
-	public String getUserEndDate() {
-		return userEndDate;
-	}
-
-
-
-	public void setUserEndDate(String userEndDate) {
-		this.userEndDate = userEndDate;
-	}
 
 
 

@@ -47,7 +47,7 @@
 						<a class="mypageatag" href="javascript:location.href='${pageContext.request.contextPath}/petsitterform.user'">돌보미 신청</a>
 					</li>
 					<li>
-						<a href="carelist.jsp">돌봄 내역</a>
+						<a href="javascript:location.href='${pageContext.request.contextPath}/careList.use'">돌봄 내역</a>
 					</li>
 					<li>
 						<a href="reservationlist.jsp">이용 내역</a>
@@ -77,7 +77,7 @@
 								</div>
 							</section>
 							<section class="text_wrap">
-								<b>내용<c:out value="${user.userContent}"/></b>
+								<b>내용</b>
 								<div>
 									<textarea rows="" cols="" placeholder="돌보미가 됨에 있어 책임감을 가지고 신청해주세요." name="userContent"><c:out value="${user.userContent}"/></textarea>
 								</div> 

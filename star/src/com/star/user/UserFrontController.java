@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.star.Result;
+import com.star.use.controller.CareListController;
+import com.star.use.controller.CareListOkController;
 import com.star.user.controller.ChangeAddressOkController;
 import com.star.user.controller.ChangeAgeOkController;
 import com.star.user.controller.ChangeGenderOkController;
@@ -27,15 +29,13 @@ public class UserFrontController extends HttpServlet {
 		req.setCharacterEncoding("UTF-8");
 		String target = req.getRequestURI().replace("/", "").split("\\.")[0];
 		Result result = new Result();
-//		if(target.equals("loginOk")) {
-//			result = new LoginOkController().execute(req,resp);
-//		}else
-		if(target.equals("sitterList")) {
+		if(target.equals("loginOk")) {
+			result = new LoginOkController().execute(req,resp);
+		}else if(target.equals("sitterList")) {
 			result = new SitterListOkController().execute(req, resp);
 			
 		}else if(target.equals("sitterDetailOk")) {
 			result = new SitterDetailOkController().execute(req, resp);
-		
 		
 		}else if(target.equals("myInfo")) {
 			result = new MyInfoController().execute(req, resp);
@@ -61,7 +61,58 @@ public class UserFrontController extends HttpServlet {
 		}else if(target.equals("petsitterformOk")) {
 		result = new PetSitterFormOkController().execute(req, resp);
 		
+		}else if(target.equals("careList")) {
+			result = new CareListController().execute(req, resp);
+			
+		}else if(target.equals("careListOk")) {
+			result = new CareListOkController().execute(req, resp);
+			
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+				
+				
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				
+						
+					
+						
+						
+
+		
 		
 		
 		
