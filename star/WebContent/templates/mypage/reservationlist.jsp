@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../../static/css/mypage/reservationlist.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/reservationlist.css">
 <link rel="stylesheet" type="text/css"
 	href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 <meta charset="UTF-8">
@@ -60,24 +60,10 @@
 			</nav>
 			<div class="align_rt">
 				<div class="reverse_list">
-					<section>
-						<h3>예약 내역</h3>
-					</section>
 					<section class="list_cancel">
 						<h3>이용 내역</h3>
 						<ul class="list_wrap">
-							<li class="reservation-detail">
-								<div>
-									<a href="" class="product-title"> 
-										<i class="bg_w">이용완료</i>
-										<strong>신촌 라싸</strong> 
-										<span>03.27 월 - 03.27 월 • 대실</span>
-									</a>
-									<p class="btn_re">
-										<a href="">다시 예약</a>
-									</p>
-								</div>
-							</li>
+							
 						</ul>
 					</section>
 				</div>
@@ -85,5 +71,6 @@
 		</div>
 	</div>
 </body>
-<script src="../../static/js/mypage/header.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage/reservationlist.js"></script>
 </html>

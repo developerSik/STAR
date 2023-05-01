@@ -29,4 +29,12 @@ public SqlSession sqlSession;
 //	   public void delete(Long reprotId) {
 //	      sqlSession.delete("report.delete", reprotId);
 //	   }
+	//이용내역 불러오기
+	public List<UseDTO> selectUselist(HashMap<String, Object> pagable) {
+		return sqlSession.selectList("use.selectuselist",pagable);
+	}
+	
+	
+	
+	
 }

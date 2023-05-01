@@ -93,5 +93,5 @@
 		</div>
 	</div>
 </body>
-<script src="../../static/js/mypage/header.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
 </html>

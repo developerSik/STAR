@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.star.Result;
 import com.star.use.controller.CareListOkController;
+import com.star.use.controller.ReservationOk;
 
 public class UseFrontController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -20,11 +21,11 @@ public class UseFrontController extends HttpServlet {
 			result.setPath("/templates/mypage/carelist.jsp");
 		}else if(target.equals("careListOk")) {
 			result = new CareListOkController().execute(req,resp);
-		}else if(target.equals("useList")){
+		}else if(target.equals("reservation")){
 			result = new Result();
-			result.setPath("/templates/mypage/reserva.jsp");
-		}else if(target.equals("careListOk")) {
-			result = new CareListOkController().execute(req,resp);
+			result.setPath("/templates/mypage/reservation.jsp");
+		}else if(target.equals("reservationOk")){
+			result = new ReservationOk().execute(req,resp);
 		}
 		
 		//여기까지 작업공간
