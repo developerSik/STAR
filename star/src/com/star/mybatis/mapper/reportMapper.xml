@@ -37,6 +37,14 @@
 	<select id="selectReport">
 		select report_id, use_number, user_name, report_title, 
 	</select>
+	
+	<select id="selectReportDetailAdmin" resultType="reportDTO">
+		select report_id, s.use_number, user_name, report_title, user_id, report_content
+		from tbl_user u left join tbl_report r
+		on u.user_number = r.user_number join tbl_use s on u.user_number = s.use_number 
+		and report_id = ${reportId}
+	</select>
+	
 </mapper>
 
 

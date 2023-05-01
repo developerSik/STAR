@@ -34,7 +34,7 @@
 		<mapper resource="com/star/mybatis/mapper/userMapper.xml"/>
  		<mapper resource="com/star/mybatis/mapper/useMapper.xml"/>
  		<mapper resource="com/star/mybatis/mapper/reportMapper.xml"/>
-    <mapper resource="com/star/mybatis/mapper/reviewMapper.xml"/>
+   	    <mapper resource="com/star/mybatis/mapper/reviewMapper.xml"/>
 	</mappers>
 </configuration>
 
