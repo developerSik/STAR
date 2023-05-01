@@ -13,7 +13,6 @@ import com.star.user.controller.ChangeAgeOkController;
 import com.star.user.controller.ChangeGenderOkController;
 import com.star.user.controller.ChangeNameOkController;
 import com.star.user.controller.ChangePhoneNumberOkController;
-import com.star.user.controller.LoginOkController;
 import com.star.user.controller.MyInfoController;
 import com.star.user.controller.PetSitterFormController;
 import com.star.user.controller.PetSitterFormOkController;
@@ -27,9 +26,7 @@ public class UserFrontController extends HttpServlet {
 		req.setCharacterEncoding("UTF-8");
 		String target = req.getRequestURI().replace("/", "").split("\\.")[0];
 		Result result = new Result();
-		if(target.equals("loginOk")) {
-			result = new LoginOkController().execute(req,resp);
-		}else if(target.equals("sitterList")) {
+		if(target.equals("sitterList")) {
 			result = new SitterListOkController().execute(req, resp);
 			
 		}else if(target.equals("sitterDetailOk")) {
