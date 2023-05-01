@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/sitter/mission.css">
 <link rel="stylesheet" href="../../static/css/sitter/mission.css">
 <title>퀘스트 전달하기</title>
 </head>

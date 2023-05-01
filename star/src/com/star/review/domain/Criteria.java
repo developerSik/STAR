@@ -1,6 +1,9 @@
 package com.star.review.domain;
 
 public class Criteria {
+
+
+
    private int offset;
    private int rowCount;
    private int startPage;
@@ -74,16 +77,3 @@ public class Criteria {
       this.next = next;
    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -5,6 +5,7 @@
 <head>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/carelist.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/modal.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/carelist.css">
 <link rel="stylesheet" type="text/css"
 	href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 <title>돌봄내역</title>

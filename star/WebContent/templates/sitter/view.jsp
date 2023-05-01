@@ -13,7 +13,6 @@
     <div class="wrap show">
 	<header id="menu">
         <section>
-            <div>
 			<div>
                 <img style="width: 150px; height: 150px; margin-left: -90px; margin-top: -33px;" src="../../static/image/3.png">
                 </div>
@@ -28,6 +27,7 @@
             </ul>
         </section>
    	 </header>
+   	 </div>
         <form id="product_filter_form" method="get">
             <div class="listpage">
                 <div class="sub_top_wrap">
@@ -55,6 +55,8 @@
                     <div class="info">
                         <p class="badge">
                         </p>
+                        <div class="score_cnt">
+                        </div>
                         <h2><c:out value="${user.userName}"/> 돌봄이</h2>
                         <div class="score_cnt">
                         </div>
@@ -64,8 +66,11 @@
                     </div>
                     <div class="comment">
                         <strong>돌봄이 자기소개</strong>
-
-                        <div class=""><c:out value="${user.userContent}"/></div>
+                        <div class="sitterphone"><c:out value="${user.userContent}"/></div>
+                    </div>
+                    <div class="comment">
+                        <strong>돌봄이 연락처</strong>
+                        <div><c:out value="${user.userPhonenumber}"/></div>
                     </div>
                 </div>
             </div>

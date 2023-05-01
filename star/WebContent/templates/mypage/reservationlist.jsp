@@ -4,6 +4,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/reservationlist.css">
+<link rel="stylesheet" href="../../static/css/mypage/reservationlist.css">
 <link rel="stylesheet" type="text/css"
 	href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 <meta charset="UTF-8">
@@ -73,4 +74,6 @@
 </body>
 <script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/mypage/reservationlist.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/mypage/header.js"></script>
+<script src="../../static/js/mypage/header.js"></script>
 </html>

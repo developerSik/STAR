@@ -24,6 +24,7 @@ public class UserFrontController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setCharacterEncoding("UTF-8");
+
 		String target = req.getRequestURI().replace("/", "").split("\\.")[0];
 		Result result = new Result();
 		if(target.equals("sitterList")) {
@@ -118,7 +119,6 @@ public class UserFrontController extends HttpServlet {
 				req.getRequestDispatcher(result.getPath()).forward(req, resp);
 			}
 		}
-		
 	}
 	
 	@Override

@@ -5,9 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>신고목록</title>
-<link rel="stylesheet" href="../../static/css/adminpage/adminconstructor.css">
-<link rel="stylesheet" href="../../static/css/adminpage/reportlist.css">
-<link rel="stylesheet" href="../../static/css/adminpage/font.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/adminpage/adminconstructor.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/adminpage/reportlist.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/adminpage/font.css">
+
 </head>
 <body>
 	<main>
