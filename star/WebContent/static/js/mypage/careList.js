@@ -1,46 +1,101 @@
-/*게시글 목록*/
-showList();
 
-function showList(){
-	console.log(boards);
-	boards = JSON.parse(boards);
-	//files = JSON.parse(files);
-	const $ul = $("#content-wrap ul");
-	let text = "";
+let page = 1;
+let count = 1; //한번만 실행할수있게하는 flag
+let loading = false;    //중복실행여부 확인 변수
+$(window).ready(next_load());
+
+/*게시글 불러오기 ajax 함수*/
+function next_load() {
+	console.log("ajax들어옴");
+   $.ajax({
+      type: "POST",
+	data: { page: page },
+      url: contextPath + `/careListOk.use`,	
+		beforeSend: function() {
+         $('.wrap-loading').removeClass('display-none');
+      },
+      success: function(result) {
+         result = JSON.parse(result);
+         if (result) {
+		console.log(result)
+            if (result.length == 0) {
+               $('.wrap-loading').addClass('display-none');
+               showWarnModal("마지막 돌봄내역입니다");
+               return;
+            }console.log("들어옴");
+            showList(result);
+            loading = false;    //실행 가능 상태로 변경
+         }
+      }, complete: function() {
+         $('.wrap-loading').addClass('display-none');
+      }, error: function(request, status, error) { // 오류가 발생했을 때 호출된다.
+         if (error === 'timeout') {
+            showWarnModal("요청한 시간이 지났습니다.<br> 새로고침을 시도해주세요.");
+         }
+      }, timeout: 20000
+   });
+}
+
+
+
+$(window).scroll(function() {
+   console.log(Math.round($(window).scrollTop()));
+   console.log($(document).height() - $(window).height());
+   if (Math.round($(window).scrollTop()) >= $(document).height() - $(window).height()) {
+      if (!loading)    //실행 가능 상태라면?
+      {
+         page++;
+         loading = true; //실행 불가능 상태로 변경
+         next_load();
+         return;
+      }
+   }
+});
+
+/*게시글 목록*/
+
+function showList(result){
+	const $ul = $(".list_wrap");
+	let text="";
 	
-	boards.forEach(board => {
+	result.forEach(use=> {
 		text += `
-			<li>
-		        <div>
-		            <a href="javascript:location.href='${contextPath}/board/detailOk.board'">
-		                <section class="content-container">
-		                    <div class="profile">
-		                        <div><img src="${contextPath}/static/images/profile.png" width="15px"></div>
-		                        <h6 class="writer">${board.memberName}</h6>
-		                    </div>
-		                    <h4 class="title">${board.boardTitle}</h4>
-		                    <h6 clss="board-info">
-		                        <span class="read-count">조회 ${board.boardReadCount}</span>
-		                        <span>·</span>
-		                        <span class="date">`+ elapsedTime(board.boardRegisterDate) +`</span>
-		                    </h6>
-		                </section>
-			`;
-			/*if(files[board.boardId]){
-				text += `<img src="${contextPath}/upload/${files[board.boardId].fileSystemName}" class="preview">`;
-			}*/
-			text += `
-		            </a>
-		        </div>
-		    </li>
+		
+			<li class="reservation-detail">
+								<div>
+									<a class="product-title"> 
+										<i class="bg_w">${use.useStatus}</i>
+										<strong>${use.userName}</strong> 
+										<span>${use.useUsedDate}</span>
+									</a>
+									<p class="btn_re">
+										<a href="">후기보기</a>
+									</p>
+									
+									<div class="css-report-delete">
+		                           <strong style="justify-content: space-between; display: flex;">${use.useNumber}
+		                           <button data-delete-id="${use.useNumber}"class="delete-button" style="border: none;'">
+		                              <svg width="20" height="20" fill="none"
+		                                 xmlns="http://www.w3.org/2000/svg" data-v-5a4f86fc=""
+		                                 class="deletebtn">
+		                                 <path
+		                                    d="M10 8.586l5.657-5.657 1.414 1.414L11.414 10l5.657 5.657-1.414 1.414L10 11.414l-5.657 5.657-1.414-1.414L8.586 10 2.929 4.343 4.343 2.93 10 8.586z"
+		                                    fill="#000" fill-opacity=".8" data-v-5a4f86fc="">
+		                                 </path>
+		                              </svg>
+		                           </button>
+		                           </strong>
+		                        </div> 
+								</div>
+							</li>
 			`;
 	});
 	
-	if(boards.length == 0){
+	if(result.length == 0){
 		text += `
 			<li>
 		        <div>
-					현재 게시글이 없습니다. 게시글 작성을 해보세요!
+					현재 돌봄 내역이 없습니다.돌보미가 되어보세요!
 				</div>
 			</li>
 		`
@@ -50,24 +105,37 @@ function showList(){
 }
 
 
-$.ajax({
-	url: contextPath+ `/CareList.use?userNumber=${userNumber}`,
-	datatype:"json",
-	success: function(carelists){
-		
-	}
-	
+/*버튼눌렀을때 ajax*/
+
+
+/*동적 태그 변경 감지*/
+
+/*이벤트적용*/
+$(document).on("click", ".delete-button", function() {
+   $.ajax({
+      type: "GET",
+      url: contextPath + "/reportDeleteOk.report?reportId=" + $(this).data("delete-id"),
+      beforeSend: function() {
+         $('.wrap-loading').removeClass('display-none');
+      },
+      success: function() {
+         showWarnModal("이용후기가 삭제되었습니다");
+         $(".modal").on("click", function() {
+            console.log("모달클릭 들어옴");
+            $(".report-wrap").html("");
+            page = 1;
+            next_load();
+         })
+      }, complete: function() {
+         $('.wrap-loading').addClass('display-none');
+      }, error: function(request, status, error) { // 오류가 발생했을 때 호출된다.
+         if (error === 'timeout') {
+            showWarnModal("요청한 시간이 지났습니다.<br> 새로고침을 시도해주세요.");
+         }
+      }, timeout: 3000
+
+
+   });
+
+
 });
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -13,7 +13,7 @@ import com.star.Action;
 import com.star.Result;
 import com.star.review.dao.ReviewDAO;
 
-public class ListOkContoller implements Action {
+public class ListOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {

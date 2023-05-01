@@ -68,58 +68,6 @@
 						<ul class="list_wrap">
 							<li class="reservation-detail">
 								<div>
-									<p class="pic">
-										<img alt=""
-											src="https://image.goodchoice.kr/resize_354x184/adimg_new/4354/24465/90e1e317e0b5a9c2c7cbb7828c8faced.jpg">
-									</p>
-									<a href="" class="product-title"> 
-										<i class="bg_w">이용완료</i>
-										<strong>신촌 라싸</strong> 
-										<span>03.27 월 - 03.27 월 • 대실</span>
-									</a>
-									<p class="btn_re">
-										<a href="">다시 예약</a>
-									</p>
-								</div>
-							</li>
-							<li class="reservation-detail">
-								<div>
-									<p class="pic">
-										<img alt=""
-											src="https://image.goodchoice.kr/resize_354x184/adimg_new/4354/24465/90e1e317e0b5a9c2c7cbb7828c8faced.jpg">
-									</p>
-									<a href="" class="product-title"> 
-										<i class="bg_w">이용완료</i>
-										<strong>신촌 라싸</strong> 
-										<span>03.27 월 - 03.27 월 • 대실</span>
-									</a>
-									<p class="btn_re">
-										<a href="">다시 예약</a>
-									</p>
-								</div>
-							</li>
-							<li class="reservation-detail">
-								<div>
-									<p class="pic">
-										<img alt=""
-											src="https://image.goodchoice.kr/resize_354x184/adimg_new/4354/24465/90e1e317e0b5a9c2c7cbb7828c8faced.jpg">
-									</p>
-									<a href="" class="product-title"> 
-										<i class="bg_w">이용완료</i>
-										<strong>신촌 라싸</strong> 
-										<span>03.27 월 - 03.27 월 • 대실</span>
-									</a>
-									<p class="btn_re">
-										<a href="">다시 예약</a>
-									</p>
-								</div>
-							</li>
-							<li class="reservation-detail">
-								<div>
-									<p class="pic">
-										<img alt=""
-											src="https://image.goodchoice.kr/resize_354x184/adimg_new/4354/24465/90e1e317e0b5a9c2c7cbb7828c8faced.jpg">
-									</p>
 									<a href="" class="product-title"> 
 										<i class="bg_w">이용완료</i>
 										<strong>신촌 라싸</strong> 

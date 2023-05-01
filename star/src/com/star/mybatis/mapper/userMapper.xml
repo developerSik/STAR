@@ -12,20 +12,20 @@
 		where user_id = #{userId}
 	</select> -->
 	
-	<select id="selectSitterdetail" resultType="UserVO">
+	<select id="selectSitterdetail" resultType="userVO">
 		select user_name, user_content, user_age, user_gender, user_address, user_star
 		from tbl_user
 		where user_title is not null and user_content is not null and user_number = ${userNumber}
 	</select>
 	
-	<select id="selectAllSitter" resultType="UserVO">
+	<select id="selectAllSitter" resultType="userVO">
 		select user_name, user_star, user_age, user_gender, user_address
 		from tbl_user
 		where user_title is not null and user_content is not null
 	</select>
 
 
-	<select id="selectCurrentSitters" resultType="UserVO">
+	<select id="selectCurrentSitters" resultType="userVO">
 	select user_number,user_id,user_password,user_name,user_address,user_phonenumber,user_age,user_gender,user_status,user_title,user_content,user_star,user_registrationdate,user_enddate
 	from tbl_user u
 	where u.user_title is not null

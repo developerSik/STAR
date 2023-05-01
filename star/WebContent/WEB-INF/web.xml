@@ -61,8 +61,8 @@
      <servlet-name>Review</servlet-name>
      <url-pattern>*.review</url-pattern>
   </servlet-mapping>
-  <servlet>
   
+  <servlet>
      <servlet-name>Review</servlet-name>
      <servlet-class>com.star.review.ReviewFrontController</servlet-class>
   </servlet>
@@ -71,8 +71,8 @@
      <servlet-name>Report</servlet-name>
      <url-pattern>*.report</url-pattern>
   </servlet-mapping>
-  <servlet>
   
+  <servlet>
      <servlet-name>Report</servlet-name>
      <servlet-class>com.star.report.ReportFrontController</servlet-class>
   </servlet>
@@ -96,8 +96,5 @@
   	<servlet-name>User</servlet-name>
   	<servlet-class>com.star.user.UserFrontController</servlet-class>
   </servlet>
-  
-
-  
   
 </web-app>

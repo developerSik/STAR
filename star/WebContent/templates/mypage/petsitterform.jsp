@@ -14,15 +14,15 @@
 	<div class="wrap show">
 		<header id="menu">
             <section>
-                <div>
-                <img style="width: 150px;
+                <div href="javascript:location.href='${pageContext.request.contextPath}/main.main'">
+                <img  style="width: 150px;
    					 height: 150px;
     				margin-left: -90px;
     				margin-top: -33px;" 
     				src="../../static/image/3.png">
                 </div>
                 <h1>                 
-                    <a href="" id="bannertext">Save The Animal Relationship</a>
+                    <a  id="bannertext">Save The Animal Relationship</a>
                 </h1>
                 <ul class="gnb_pc" >
                     <li><a class="bannertext" href="">내주변</a></li>
@@ -53,10 +53,10 @@
 						<a href="reservationlist.jsp">이용 내역</a>
 					</li>
 					<li>
-						<a href="review.jsp">이용후기</a>
-					</li>
-					<li>
-						<a href="report.jsp">신고목록</a>
+						<a href="javascript:location.href='${pageContext.request.contextPath}/review.review'">이용후기</a>
+						</li>
+						<li>
+						<a href="javascript:location.href='${pageContext.request.contextPath}/report.report'">신고목록</a>
 					</li>
 				</ul>
 			</nav>
