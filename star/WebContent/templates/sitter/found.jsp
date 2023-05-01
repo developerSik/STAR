@@ -96,9 +96,7 @@
                                 <li><input type="checkbox" id="tmino_23" class="inp_chk"
                                         value="332"><label for="tmino_23" class="label_chk">마포구</label></li>
                             </ul>
-<<<<<<< HEAD
                         </section>
-<<<<<<< HEAD
                         <section><strong>경기도<button type="button">모두 보기</button></strong>
                             <ul class="hide_type half">
                                 <li><input type="checkbox" id="tmino_31" class="inp_chk"

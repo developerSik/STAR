@@ -66,7 +66,11 @@
                     </div>
                     <div class="comment">
                         <strong>돌봄이 자기소개</strong>
-                        <div class=""><c:out value="${user.userContent}"/></div>
+                        <div class="sitterphone"><c:out value="${user.userContent}"/></div>
+                    </div>
+                    <div class="comment">
+                        <strong>돌봄이 연락처</strong>
+                        <div><c:out value="${user.userPhonenumber}"/></div>
                     </div>
                 </div>
             </div>
