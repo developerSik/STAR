@@ -1,6 +1,4 @@
-# STAR
-
-STAR(Save The Animal Relationship) -JSP Project
+# STAR(Save The Animal Relationship) -JSP Project
 
 <h1>예비 반려인 돌봄 서비스를 통한 유기 방지 서비스</h1>
 
@@ -8,12 +6,13 @@ STAR(Save The Animal Relationship) -JSP Project
 <h2>1. 기획 의도</h2>
 
 <img src="https://github.com/developerSik/STAR/assets/129861070/2207c3c0-33bf-4283-bbaa-e6226de414bb" style = "width: 80%; height : 480">
+<img src="https://github.com/developerSik/STAR/assets/129861070/13cb6c77-e269-4705-92df-593aa3fa6b01" style = "width: 80%; height : 480">
 
 
-식품의약품안전처에 따르면 우리나라의 식품 폐기량은 연간 548만 톤에 이른다고 합니다.<br>
-이에 대한 문제의식을 바탕으로 본 프로젝트를 시작하게 되었습니다.<br>
-<strong>유통기한이 임박한 제품을 저렴한 가격에 공급</strong>하여 <strong>소비자와 판매자 모두의 편익을 증대</strong>시키고,<br>
-<strong>식품 폐기량을 줄임</strong>으로써 사회에 기여하는 것이 저희 서비스의 목표입니다.<br>
+
+최근 애완동물 유기비율이 급격히 오르고 있다.<br>
+수많은 원인중 하나는 바로 애완동물을 기르고 마음에 입양했다가, 막상 입양해보니 기르는게 힘들거나, 주변인의 알러지같은 생각지도 못한 곳에 문제가 있을 수 있다.<br>
+<strong>이를 막기위해 나온것이 STAR이다.</strong> <br>
 
 </div>
 
