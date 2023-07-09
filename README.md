@@ -44,7 +44,7 @@
 
 <h2>4. ERD</h2>
 
-![DB_ERD](https://github.com/Developer-Kimchi/eats-time/assets/129861604/85f713a1-32b6-4b66-b2c5-27f338b9d228)
+<img src="https://github.com/Yunkihong-Dev/Tikkeul-Project/assets/81303136/6f67a89f-edb6-4ed8-a9fc-b085029a0f1d"  style = "width: 80%; height : 480">
 
   
 <h2>5. 담당 업무</h2>
