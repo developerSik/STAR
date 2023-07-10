@@ -1,6 +1,5 @@
 # STAR(Save The Animal Relationship) - JSP Project
-
-<h1>예비 반려인 돌봄 서비스를 통한 유기 방지 서비스</h1>
+예비 반려인 돌봄 서비스를 통한 유기 방지 서비스
 
 
 <h2>1. 기획 의도</h2>
