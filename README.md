@@ -8,7 +8,7 @@
 <img src="https://github.com/developerSik/STAR/assets/129861070/13cb6c77-e269-4705-92df-593aa3fa6b01" style = "width: 80%; height : 480">
 
 
-
+<br>
 최근 애완동물 유기비율이 급격히 오르고 있습니다.<br>
 수많은 원인중 하나는 바로 애완동물을 기르고 마음에 입양했다가, <br>
 막상 입양해보니 기르는게 힘들거나, 주변인의 알러지같은 생각지도 못한 곳에 문제가 있을 수 있습니다.<br>
