@@ -63,7 +63,8 @@
 <br>
 5-2 백엔드<br>
 
-<img src="https://github.com/developerSik/STAR/assets/129861070/667df89a-572b-4c9d-99ee-7a3acd267d1c"  style = "width: 80%; height : 480">
+
+<img src="https://github.com/developerSik/STAR/assets/129861070/f4988a9d-4081-4d36-a836-14fffd4a54cf"  style = "width: 80%; height : 480">
 
 
 
